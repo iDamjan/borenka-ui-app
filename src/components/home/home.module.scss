@@ -1,0 +1,203 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--background);
+  background-image: url("../../static/home-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 30px;
+  font-family: "Yomogi", cursive, sans-serif;
+
+  h2 {
+    max-width: 1000px;
+    color: var(--text-primary);
+    font-size: 30px;
+    max-width: 1000px;
+  }
+  .tree {
+    width: 100%;
+    max-width: 250px;
+    height: 150px;
+    transition: 0.1s ease-in-out;
+    padding: 10px;
+    
+  }
+  .treeCircle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 100px;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+      cursor: pointer;
+    }
+
+    svg {
+      fill: white;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      max-width: 30px;
+      z-index: 2;
+    }
+
+    //ANIMATION
+    .circle {
+      width: 100%;
+      height: 100%;
+      background-color: var(--secondary);
+      position: absolute;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: ripple-animation 2s infinite ease-in-out;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .circle1 {
+      animation-delay: unset
+    }
+
+    .circle2 {
+      animation-delay: 500ms;
+
+    }
+
+    .circle3 {
+      animation-delay: 1s;
+    }
+
+    @keyframes ripple-animation {
+      0% {
+        transform: scale(0.1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 0;
+      }
+    }
+  }
+  //ANIMATION
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    flex-direction: column;
+    .navbar__logo {
+      max-width: 450px;
+    }
+    .navigations {
+      max-width: 600px;
+      color: #265231;
+      margin: 32px;
+      .active{
+        color: var(--secondary);
+      }
+      span {
+        margin: 25px;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.15s ease-in-out;
+        &:hover {
+          color: var(--secondary);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@keyframes tree-ani {
+  from {
+    outline: 1px solid var(--secondary-transparent);
+  }
+  to {
+    outline: 10px solid var(--secondary-transparent);
+  }
+}
+.mobileContainer {
+  display: none;
+}
+
+@media (max-width: 50em) {
+  .navigations {
+    display: none;
+  }
+  .mobileContainer {
+    display: flex;
+  }
+  .container {
+    background-color: var(--background);
+    background-image: url("../../static/home-background--mobile.svg");
+
+    h2 {
+      font-size: 25px;
+    }
+    .navbar {
+      width: 100%;
+      flex-direction: row;
+      .navbar__logo {
+        max-width: 150px;
+      }
+    }
+  }
+  .link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Yomogi", cursive;
+    margin: 20px 0;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      color: var(--secondary);
+    }
+    svg {
+      margin-right: 10px;
+    }
+  }
+  .active {
+    color: var(--secondary);
+    font-family: "Yomogi", cursive;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      margin-right: 10px;
+    }
+    &::after {
+      content: none;
+    }
+  }
+  .closeIcon {
+    margin: 15px;
+    fill: white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

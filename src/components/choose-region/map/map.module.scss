@@ -1,0 +1,14 @@
+.map__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    width: 1000px;
+    g {
+      &:hover {
+        cursor: pointer;
+        opacity: 90%;
+      }
+    }
+  }
+}
