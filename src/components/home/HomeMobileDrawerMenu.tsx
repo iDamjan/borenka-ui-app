@@ -20,6 +20,7 @@ const pages = [
 ];
 
 export const MobileDrawer = () => {
+  
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
   const { pathname } = location;

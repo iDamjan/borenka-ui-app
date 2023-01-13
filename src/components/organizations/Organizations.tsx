@@ -1,16 +1,34 @@
 import classes from "./organizations.module.scss";
 import { useNavigate } from "react-router-dom";
 import LogoWhite from "../../static/logo-white.svg";
+import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
+import LogoScouts from "../../static/LogoScouts.png";
+import LogoNacionalniShumi from "../../static/LogoNacionalniShumi.png";
+import LogoZivotnaSredina from "../../static/LogoZivotnaSredina.png";
+import LogoZemjodelstvo from "../../static/LogoZemjodelstvo.png";
+import LogoUSA from "../../static/LogoUSA.png";
 
 export const Organizations = () => {
   const navigate = useNavigate();
   return (
     <div className={classes.container}>
       <section className={classes["section-one"]}>
-        <img src={LogoWhite} alt="Logo-white" />
-
+        <img
+          src={LogoWhite}
+          alt="Logo-white"
+          className={classes["logo_organizations"]}
+        />
+        <KeyboardReturnIcon
+          className={classes.backNavigation}
+          onClick={() => navigate("/home")}
+        />
         <div className={classes.details}>
-          <button onClick={() => navigate("/home")}>Оди назад</button>
+          <button
+            onClick={() => navigate("/home")}
+            className={classes["back-button__mobile"]}
+          >
+            Оди назад
+          </button>
           <h1>ЗА ОРГАНИЗАТОРИТЕ</h1>
           <h2>Сојуз на извидници на Македонија</h2>
           <p>
@@ -64,7 +82,23 @@ export const Organizations = () => {
         </div>
       </section>
       <section className={classes["section-four"]}>
-        <h1>Fourth Page</h1>
+        <div className={classes["organizations-logo"]}>
+          <h1>Организатори - Покровители</h1>
+          <img src={LogoScouts} alt="logo-scoutss" />
+          <img src={LogoNacionalniShumi} alt="logo-nacionalni-shumi" />
+          <img src={LogoZivotnaSredina} alt="logo-zivotna-sredina" />
+          <img src={LogoZemjodelstvo} alt="logo-zemjodelstvo" />
+        </div>
+        <div className={classes.usaSupport}>
+          <h2>Oвој проект е поддржан од Амбасада на САД</h2>
+          <p>
+            Мислењата, откритијата и заклучоците или препораките изнесени овде
+            се на имплементаторите/ авторите, и не ги одразуваат оние на Владата
+            на САД
+          </p>
+          <img src={LogoUSA} alt="LogoUSA" />
+        </div>
+        <h2>За сите информации обратете ни се на : <a href="mailto:info@borenka.mk">info@borenka.com</a></h2>
       </section>
     </div>
   );

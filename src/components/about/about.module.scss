@@ -19,6 +19,25 @@ section {
   position: relative;
   background-image: url("../../static/aboutUs-background.svg");
   background-repeat: no-repeat;
+  .back-button__mobile {
+    display: none;
+  }
+  .backNavigation {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 60px;
+    height: 20px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--secondary);
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(128, 128, 128, 0.212);
+    }
+  }
 
   img {
     max-width: 250px;
@@ -44,6 +63,25 @@ section {
 .section-four {
   background-color: var(--background);
   background-image: url("../../static/aboutUs-background.svg");
+  button {
+    width: 100%;
+    max-width: 250px;
+    background-color: var(--secondary);
+    border: none;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+      background-color: var(--secondary-transparent);
+    }
+  }
 }
 
 .details {
@@ -60,31 +98,12 @@ section {
       margin: 5px 0;
     }
   }
-  button {
-    width: 100%;
-    max-width: 250px;
-    background-color: var(--secondary);
-    border: none;
-    height: 40px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &:hover {
-      cursor: pointer;
-      background-color: var(--secondary-transparent);
-    }
-  }
 
   h1 {
     font-size: 40px;
     margin: 15px;
     margin-left: 0;
-    font-family: cursive;
+    font-family: 'Pangolin', cursive;
   }
   p {
     letter-spacing: 1px;
@@ -95,7 +114,7 @@ section {
   }
   h2 {
     margin-bottom: 15px;
-    font-family: cursive, sans-serif;
+    font-family: 'Pangolin', cursive;
   }
   a {
     width: 100%;
@@ -124,10 +143,8 @@ section {
   }
 }
 
-
-
-@media (max-width:40em) {
-  section{
+@media (max-width: 40em) {
+  section {
     padding: 35px;
     justify-content: none;
   }
@@ -138,57 +155,77 @@ section {
     align-items: center;
     text-align: center;
     max-width: 1000px;
-    li{
+    li {
       text-align: left;
     }
-    h1{
+    h1 {
       font-size: 25px;
     }
-    p{
+    p {
       font-size: 13px;
     }
-    h2{
+    h2 {
       font-size: 12px;
     }
-}
-.section-one {
-  background-color: var(--background);
-  background-image: url("../../static/about-us-mobile-background.svg");
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  img {
-  max-width:200px;
-  position: relative;
-  margin-bottom: 50px;
   }
-}
-.section-two{
-  background-image: url("../../static/about-us-mobile-background2.svg");
-  background-repeat: no-repeat;
+  .section-one {
+    background-color: var(--background);
+    background-image: url("../../static/about-us-mobile-background.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .backNavigation {
+      display: none;
+    }
 
-}
-.section-tree{
-  background-image: url("../../static/about-us-mobile-background.svg");
-  background-repeat: no-repeat;
-
-  .details{
-    p {
-      font-size: 14px;
+    .back-button__mobile {
+      width: 100%;
+      max-width: 250px;
+      background-color: var(--secondary);
+      border: none;
+      height: 40px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 40px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        cursor: pointer;
+        background-color: var(--secondary-transparent);
+      }
+    }
+    img {
+      max-width: 150px;
+      position:relative;
+      margin-bottom: 50px;
     }
   }
+  .section-two {
+    background-image: url("../../static/about-us-mobile-background2.svg");
+    background-repeat: no-repeat;
+  }
+  .section-tree {
+    background-image: url("../../static/about-us-mobile-background.svg");
+    background-repeat: no-repeat;
 
-}
-.section-four{
-  background-image: url("../../static/about-us-mobile-background2.svg");
-  background-repeat: no-repeat;
-
-  .details{
-    p{
-      font-size: 14px;
+    .details {
+      p {
+        font-size: 14px;
+      }
     }
-}
-}
+  }
+  .section-four {
+    background-image: url("../../static/about-us-mobile-background2.svg");
+    background-repeat: no-repeat;
+
+    .details {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
 }

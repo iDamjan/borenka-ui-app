@@ -6,31 +6,49 @@ import { useNavigate } from "react-router-dom";
 import Logo from "../../static/Logo.svg";
 import { UploadModalMobile } from "../modal/UploadModalMobile";
 import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
+import { MobileDrawer } from "../home/HomeMobileDrawerMenu";
 
+interface RegionData {
+  name: string;
+  id: string;
+  image: string;
+}
 export const Region = () => {
   const { regionId } = useParams();
   const navigate = useNavigate();
 
-  const region = data.find((region) => region.id === regionId);
-  const regionImage = region?.image;
+  const region: RegionData | undefined = data.find(
+    (region) => region.id === regionId
+  );
+  const regionImage: string | undefined = region?.image;
+  const regionName: string | undefined = region?.name;
 
   return (
     <div className={classes.container}>
-      <img
-        className={classes.logo}
-        src={Logo}
-        alt="Region"
-        onClick={() => navigate("/home")}
-      />
+      
+      <div className={classes["container__header"]}>
       <KeyboardReturnIcon
         className={classes.backNavigation}
         onClick={() => navigate("/map")}
       />
-      <UploadModalMobile />
-      <div className={classes.desktopModal}>
-        <UploadModal />
+        <img
+          className={classes.logo}
+          src={Logo}
+          alt="Region"
+          onClick={() => navigate("/home")}
+        />
+        <h1 className={classes.regionNameDesktop}>{regionName}</h1>
+
+        <MobileDrawer />
       </div>
-      <img className={classes.region} src={regionImage} alt={region?.id} />
+      <h2 className={classes.regionNameMobile}>{regionName}</h2>
+      <UploadModalMobile />
+      <div className={classes.uploadSection}>
+        <div className={classes.desktopModal}>
+          <UploadModal />
+        </div>
+        <img className={classes.region} src={regionImage} alt={region?.id} />
+      </div>
     </div>
   );
 };

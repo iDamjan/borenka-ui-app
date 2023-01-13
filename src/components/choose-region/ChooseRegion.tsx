@@ -3,6 +3,8 @@ import Map from "./map/Map";
 import Logo from "../../static/Logo.svg";
 import classes from "./choose-region.module.scss";
 import { useNavigate } from "react-router-dom";
+import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
+import { MobileDrawer } from "../home/HomeMobileDrawerMenu";
 
 export const ChooseRegion = () => {
   const [currentHoveredRegion, setCurrentHoveredRegion] = useState<string>(
@@ -12,8 +14,15 @@ export const ChooseRegion = () => {
 
   return (
     <div className={classes.container}>
+      
       <div className={classes["container__header"]}>
         <img src={Logo} alt="logo" onClick={() => navigate("/home")} />
+        <MobileDrawer />
+
+        <KeyboardReturnIcon
+        className={classes.backNavigation}
+        onClick={() => navigate("/home")}
+      />
         <h1>{currentHoveredRegion}</h1>
       </div>
       <Map setCurrentHoveredRegion = {setCurrentHoveredRegion}/>

@@ -2,15 +2,31 @@ import classes from "./about.module.scss";
 import Logo from "../../static/Logo.svg";
 import { useNavigate } from "react-router-dom";
 import ParkIcon from "@mui/icons-material/Park";
+import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
+
 
 export const About = () => {
   const navigate = useNavigate();
   return (
     <div className={classes.container}>
       <section className={classes["section-one"]}>
-        <img className={classes["section-one__logo"]} src={Logo} alt="logo" />
+        <img
+          className={classes["logo_about-us"]}
+          src={Logo}
+          alt="logo"
+          onClick={() => navigate("/home")}
+        />
+        <KeyboardReturnIcon
+        className={classes.backNavigation}
+        onClick={() => navigate("/home")}
+      />
         <div className={classes.details}>
-          <button onClick={() => navigate("/home")}>Оди назад</button>
+          <button
+            onClick={() => navigate("/home")}
+            className={classes["back-button__mobile"]}
+          >
+            Оди назад
+          </button>
           <h1>ЗA СОЈУЗ НА ИЗВИДНИЦИ НА МАКЕДОНИЈА</h1>
           <p>
             Сојузот на извидници на Македонија е национална извидничка
@@ -63,7 +79,7 @@ export const About = () => {
             шуми кои обезбедуваат подготовка на теренот, стручна помош,
             експертиза и надзор во дејствијата за садење.
           </p>
-          <a href="https://www.facebook.com/borenkamk">Следи не на фејсбук</a>
+          <a target='_blank' href="https://www.facebook.com/borenkamk">Следи не на фејсбук</a>
         </div>
       </section>
       <section className={classes["section-four"]}>

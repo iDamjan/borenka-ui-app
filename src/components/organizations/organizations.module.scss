@@ -16,10 +16,30 @@ section {
 }
 .section-one {
   background-color: var(--primary);
-  position: relative;
   background-image: url("../../static/aboutUs-background.svg");
   background-repeat: no-repeat;
-
+  position: relative;
+  .details {
+    .back-button__mobile {
+      display: none;
+    }
+  }
+  .backNavigation {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 60px;
+    height: 20px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--secondary);
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(128, 128, 128, 0.212);
+    }
+  }
   img {
     max-width: 250px;
     position: absolute;
@@ -48,6 +68,47 @@ section {
 .section-four {
   background-color: var(--primary);
   background-image: url("../../static/aboutUs-background.svg");
+  justify-content: space-evenly;
+  flex-direction: column;
+  .organizations-logo {
+    width: 100%;
+    max-width: 1200px;
+    img {
+      max-width: 250px;
+      margin: 15px;
+    }
+  }
+  .usaSupport {
+    width: 100%;
+    max-width: 1200px;
+    img{
+      max-width: 250px;
+    }
+    h2 {
+      font-family: "Pangolin", cursive;
+    }
+    p {
+      font-size: 19px;
+      max-width: 1000px;
+      margin: 15px 0;
+    }
+  }
+  a {
+    width: 100%;
+    max-width: 250px;
+    color: var(--secondary);
+    border: none;
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+      color: var(--secondary-transparent);
+     
+    }
+  }
 }
 .details {
   display: flex;
@@ -63,31 +124,12 @@ section {
       margin: 5px 0;
     }
   }
-  button {
-    width: 100%;
-    max-width: 250px;
-    background-color: var(--secondary);
-    border: none;
-    height: 40px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 40px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &:hover {
-      cursor: pointer;
-      background-color: var(--secondary-transparent);
-    }
-  }
 
   h1 {
     font-size: 40px;
     margin: 15px;
     margin-left: 0;
-    font-family: cursive;
+    font-family: "Pangolin", cursive;
   }
   p {
     letter-spacing: 1px;
@@ -98,8 +140,9 @@ section {
   }
   h2 {
     margin-bottom: 15px;
-    font-family: cursive;
+    font-family: "Pangolin", cursive;
   }
+  
 }
 
 @media (max-width: 40em) {
@@ -107,6 +150,7 @@ section {
     padding: 35px;
     justify-content: none;
   }
+
   .details {
     display: flex;
     justify-content: center;
@@ -127,18 +171,43 @@ section {
       font-size: 12px;
     }
   }
-}
-.section-one {
-  background-color: var(--primary);
-  background-image: url("../../static/about-us-mobile-background.svg");
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  img {
-    max-width: 200px;
-    position: relative;
-    margin-bottom: 50px;
+
+  .section-one {
+    background-color: var(--primary);
+    background-image: url("../../static/about-us-mobile-background.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .backNavigation {
+      display: none;
+    }
+    .details {
+      .back-button__mobile {
+        width: 100%;
+        max-width: 250px;
+        background-color: var(--secondary);
+        border: none;
+        height: 40px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 40px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          cursor: pointer;
+          background-color: var(--secondary-transparent);
+        }
+      }
+    }
+    img {
+      max-width: 150px;
+      position: relative;
+      margin-bottom: 50px;
+    }
   }
 
   .section-two {
@@ -160,6 +229,18 @@ section {
   }
   .section-four {
     background-image: url("../../static/about-us-mobile-background2.svg");
+    text-align: center;
+    .organizations-logo{
+      img{
+        max-width: 150px;
+      }
+      
+    }
+    .usaSupport{
+      img{
+        max-width: 150px;
+      }
+    }
     .details {
       p {
         font-size: 14px;
