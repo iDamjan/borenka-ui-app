@@ -1,5 +1,4 @@
 import classes from "./region.module.scss";
-import { data } from "../../region-data";
 import { useParams } from "react-router-dom";
 import UploadModal from "../modal/UploadModal";
 import { useNavigate } from "react-router-dom";
@@ -7,6 +6,7 @@ import Logo from "../../static/Logo.svg";
 import { UploadModalMobile } from "../modal/UploadModalMobile";
 import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
 import { MobileDrawer } from "../home/HomeMobileDrawerMenu";
+import { getRegionById } from "../utils/getRegionById";
 
 interface RegionData {
   name: string;
@@ -17,20 +17,17 @@ export const Region = () => {
   const { regionId } = useParams();
   const navigate = useNavigate();
 
-  const region: RegionData | undefined = data.find(
-    (region) => region.id === regionId
-  );
+  const region: RegionData | undefined = getRegionById(regionId);
   const regionImage: string | undefined = region?.image;
   const regionName: string | undefined = region?.name;
 
   return (
     <div className={classes.container}>
-      
       <div className={classes["container__header"]}>
-      <KeyboardReturnIcon
-        className={classes.backNavigation}
-        onClick={() => navigate("/map")}
-      />
+        <KeyboardReturnIcon
+          className={classes.backNavigation}
+          onClick={() => navigate("/map")}
+        />
         <img
           className={classes.logo}
           src={Logo}

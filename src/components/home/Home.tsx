@@ -9,10 +9,11 @@ const pages = [
   { label: "Дома", path: "/home" },
   { label: "За нас", path: "/about" },
   { label: "Организатори", path: "/organizations" },
-  { label: "Засади Дрво", path: "/map" },
+  { label: "Засади дрво", path: "/map" },
 ];
 
 export const Home = () => {
+  
   const navigate = useNavigate();
   const location = useLocation();
   const { pathname } = location;
@@ -22,7 +23,7 @@ export const Home = () => {
       <ParkIcon />
       <div className={`${classes.circle} ${classes.circle1}`}></div>
       <div className={`${classes.circle} ${classes.circle2}`}></div>
-      <div className={`${classes.circle} ${classes.circle3}`}>Посади дрво</div>
+      <div className={`${classes.circle} ${classes.circle3}`}>Засади дрво</div>
     </div>
   );
 

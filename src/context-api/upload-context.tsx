@@ -1,9 +1,10 @@
 import { useState, createContext } from "react";
-
 export const ContextApi = createContext({});
 
 export const ContextProvider = ({ children }: any) => {
   const [openModalMobile, setOpenModalMobile] = useState(false);
+
+
 
   const [popupMessage, setPopupMessage] = useState<any>({
     isVisible: false,

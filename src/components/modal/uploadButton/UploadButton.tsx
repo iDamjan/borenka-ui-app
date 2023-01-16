@@ -4,8 +4,21 @@ import CircularProgress from "@mui/material/CircularProgress";
 import classes from "./UploadButton.module.scss";
 import { useState, useContext } from "react";
 import Compressor from "compressorjs";
-import { ContextApi } from "../../../context-api/upload-context";
 import { uploadToDrive } from "./api";
+import { useParams } from "react-router-dom";
+import { getRegionById } from "../../utils/getRegionById";
+import { ContextApi } from "../../../context-api/upload-context";
+
+interface RegionData {
+  name: string;
+  id: string;
+  image: string;
+  imageName: string;
+}
+
+interface Props {
+  isValid: boolean,
+}
 
 export default function UploadButton({
   isValid,
@@ -20,8 +33,14 @@ export default function UploadButton({
   inputs: any;
 }) {
   const { setPopupMessage, setOpenModalMobile }: any = useContext(ContextApi);
-  const [isLoading, setIsLoading] = useState(false);
 
+  const { regionId } = useParams();
+
+  const region: RegionData | undefined = getRegionById(regionId);
+
+  const imageRegionName = region?.imageName;
+
+  const [isLoading, setIsLoading] = useState(false);
   const handleCompressedUpload = (e: any) => {
     const image = e.target.files[0];
     new Compressor(image, {
@@ -36,8 +55,9 @@ export default function UploadButton({
   const uploadImageToDrive = async (image: any) => {
     setIsLoading(true);
 
+    const timeStamp = Date.now();
     const formData = new FormData();
-    const imageName = `${inputs.name}_${inputs.treeName}`;
+    const imageName = `${imageRegionName}_${inputs.name}_${inputs.treeName}_${timeStamp}`;
     formData.append("image", image, imageName);
 
     try {

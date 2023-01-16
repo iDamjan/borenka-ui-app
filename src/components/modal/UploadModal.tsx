@@ -22,7 +22,7 @@ const style = {
 };
 
 export default function UploadModal() {
-  const { popupMessage }:any = useContext(ContextApi);
+  const { popupMessage }: any = useContext(ContextApi);
   const [inputs, setInputs] = useState<FormInputType>({
     name: "",
     treeName: "",
@@ -69,7 +69,7 @@ export default function UploadModal() {
       )}
       <Box sx={style} className={classes.container}>
         <Typography id="modal-modal-title" variant="h6" component="h2">
-          Посади виртуелно дрво
+          Засади виртуелно дрво
         </Typography>
         <Box
           className={classes.box}

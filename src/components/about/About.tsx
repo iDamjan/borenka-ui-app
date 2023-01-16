@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import ParkIcon from "@mui/icons-material/Park";
 import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
 
-
 export const About = () => {
   const navigate = useNavigate();
   return (
@@ -17,9 +16,9 @@ export const About = () => {
           onClick={() => navigate("/home")}
         />
         <KeyboardReturnIcon
-        className={classes.backNavigation}
-        onClick={() => navigate("/home")}
-      />
+          className={classes.backNavigation}
+          onClick={() => navigate("/home")}
+        />
         <div className={classes.details}>
           <button
             onClick={() => navigate("/home")}
@@ -79,7 +78,9 @@ export const About = () => {
             шуми кои обезбедуваат подготовка на теренот, стручна помош,
             експертиза и надзор во дејствијата за садење.
           </p>
-          <a target='_blank' href="https://www.facebook.com/borenkamk">Следи не на фејсбук</a>
+          <a target="_blank" href="https://www.facebook.com/borenkamk">
+            Следи не на фејсбук
+          </a>
         </div>
       </section>
       <section className={classes["section-four"]}>
@@ -106,7 +107,7 @@ export const About = () => {
           </p>
           <button onClick={() => navigate("/map")}>
             <ParkIcon />
-            Посади дрво
+            Засади дрво
           </button>
         </div>
       </section>

@@ -45,6 +45,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    height: 100vh;
   }
 
   .region {
@@ -60,6 +61,9 @@
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    .uploadSection{
+      height: auto;
+    }
     .container__header {
       display: flex;
       justify-content: space-between;
@@ -79,6 +83,7 @@
     }
 
     .regionNameMobile {
+      display: block;
       font-family: "Pangolin", cursive;
       color: var(--text-primary);
     }

@@ -11,41 +11,49 @@ export const data = [
   {
     id: "istocen-region",
     name: "Источен регион",
+    imageName: "Istocen",
     image: istocenRegion,
   },
   {
     id: "jugoistocen-region",
     name: "Југоисточен регион",
+    imageName: "Jugozapaden",
     image: jugoistocenRegion,
   },
   {
     id: "jugozapaden-region",
     name: "Југозападен регион",
+    imageName: "Jugozapaden",
     image: jugozapadenRegion,
   },
   {
     id: "pelagoniski-region",
     name: "Пелагониски регион",
+    imageName: "Pelagoniski",
     image: pelagoniskiRegion,
   },
   {
     id: "severoistocen-region",
     name: "Североисточен регион",
+    imageName: "Severoistocen",
     image: severoistocenRegion,
   },
   {
     id: "skopski-region",
     name: "Скопски регион",
+    imageName: "Skopski",
     image: skopskiRegion,
   },
   {
     id: "vardarski-region",
     name: "Вардарски регион",
+    imageName:"Vardarski",
     image: vardarskiRegion,
   },
   {
     id: "poloski-region",
     name: "Полошки регион",
+    imageName :"Poloshki",
     image: poloskiRegion,
   },
 ];
