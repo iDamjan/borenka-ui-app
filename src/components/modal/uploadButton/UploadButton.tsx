@@ -44,8 +44,8 @@ export default function UploadButton({
   const handleCompressedUpload = (e: any) => {
     const image = e.target.files[0];
     new Compressor(image, {
-      quality: 0.6,
-      maxWidth: 300,
+      quality: 0.8,
+      maxWidth: 600,
       success: (compressedResult) => {
         uploadImageToDrive(compressedResult);
       },
