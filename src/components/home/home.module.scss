@@ -16,14 +16,15 @@
   h2 {
     max-width: 1000px;
     color: var(--text-primary);
-    font-size: 35px;
+    font-size: 30px;
     max-width: 1000px;
     font-family: 'Pangolin', cursive;
+  
   }
   .tree {
     width: 100%;
-    max-width: 250px;
-    height: 150px;
+    max-width: 200px;
+    margin-left:100px;
     transition: 0.1s ease-in-out;
     padding: 10px;
     

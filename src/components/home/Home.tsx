@@ -1,4 +1,5 @@
 import classes from "./home.module.scss";
+import tree from "../../static/tree.png";
 import { useNavigate, useLocation } from "react-router-dom";
 import Logo from "../../static/Logo.svg";
 import { MobileDrawer } from "./HomeMobileDrawerMenu";
@@ -12,6 +13,7 @@ const pages = [
 ];
 
 export const Home = () => {
+  
   const navigate = useNavigate();
   const location = useLocation();
   const { pathname } = location;
@@ -44,6 +46,7 @@ export const Home = () => {
         <img src={Logo} alt="Logo" className={classes.navbar__logo} />
         <MobileDrawer />
       </div>
+      <img className = {classes.tree} src={tree} alt="tree" />
       <h2>
         Нацртај дрво, засади го во виртуелната шума и стани дел од БОРЕНКА -
         иницијатива за пошумување на опожарени подрачја во РС Македонија
