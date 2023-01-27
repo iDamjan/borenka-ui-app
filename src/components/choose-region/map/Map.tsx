@@ -8,8 +8,7 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
     <div className={classes["map__container"]}>
       <svg onMouseOut={() => setCurrentHoveredRegion("Избери регион и посади виртуелно дрво")} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1134.299 867.05">
         <g
-          onMouseOver={() => setCurrentHoveredRegion("Пелагониски регион") }
-          onClick={() => navigate("/map/pelagoniski-region")}
+        onMouseOver={() => setCurrentHoveredRegion("Пелагониски регион") }
           id="pelagoniski-region"
           data-name="pelagoniski-region"
         >
@@ -614,8 +613,7 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
           </g>
         </g>
         <g
-           onMouseOver={() => setCurrentHoveredRegion("Југозападен регион") }
-          onClick={() => navigate("/map/jugozapaden-region")}
+        onMouseOver={() => setCurrentHoveredRegion("Југозападен регион") }
           id="jugozapaden-region"
           data-name="jugozapaden-region"
         >
@@ -1052,7 +1050,7 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
           </g>
         </g>
         <g
-          onClick={() => navigate("/map/poloski-region")}
+         
           onMouseOver = {() => setCurrentHoveredRegion("Полошки регион")}
           id="poloski-region"
           data-name="poloski-region"
@@ -1357,7 +1355,7 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
           </g>
         </g>
         <g
-          onClick={() => navigate("/map/skopski-region")}
+        
           onMouseOver={() => setCurrentHoveredRegion("Скопски регион") }
           id="skopski-region"
           data-name="skopski-region"

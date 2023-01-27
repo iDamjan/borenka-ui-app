@@ -45,6 +45,9 @@ section {
     left: 0;
     top: 0;
     margin: 20px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -103,7 +106,7 @@ section {
     font-size: 40px;
     margin: 15px;
     margin-left: 0;
-    font-family: 'Pangolin', cursive;
+   
   }
   p {
     letter-spacing: 1px;
@@ -114,7 +117,7 @@ section {
   }
   h2 {
     margin-bottom: 15px;
-    font-family: 'Pangolin', cursive;
+    
   }
   a {
     width: 100%;

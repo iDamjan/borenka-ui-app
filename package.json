@@ -1,5 +1,6 @@
 {
-  "name": "izvidnici-proekt",
+  "homepage": "http://iDamjan.github.io/borenka",
+  "name": "borenka",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,11 +21,14 @@
     "@types/node": "^16.18.3",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
-    "typescript": "^4.9.3",
-    "sass": "^1.56.1"
+    "gh-pages": "^5.0.0",
+    "sass": "^1.56.1",
+    "typescript": "^4.9.3"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

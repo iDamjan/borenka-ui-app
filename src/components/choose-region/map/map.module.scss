@@ -3,12 +3,20 @@
   justify-content: center;
   align-items: center;
   svg {
-    width: 1000px;
+    width: 100%;
+    max-width: 800px;
     g {
       &:hover {
         cursor: pointer;
         opacity: 90%;
       }
+    }
+  }
+}
+@media (max-width: 75em){
+  .map__container{
+    svg{
+      max-width: 600px;
     }
   }
 }

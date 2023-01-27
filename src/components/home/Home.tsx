@@ -10,6 +10,7 @@ const pages = [
   { label: "За нас", path: "/about" },
   { label: "Организатори", path: "/organizations" },
   { label: "Засади дрво", path: "/map" },
+  { label: "Контакт", path: "/contact" },
 ];
 
 export const Home = () => {

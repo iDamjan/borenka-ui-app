@@ -89,16 +89,21 @@ export const Organizations = () => {
           <img src={LogoZivotnaSredina} alt="logo-zivotna-sredina" />
           <img src={LogoZemjodelstvo} alt="logo-zemjodelstvo" />
         </div>
+      </section>
+      <section className={classes["section-five"]}>
         <div className={classes.usaSupport}>
-          <h2>Oвој проект е поддржан од Амбасада на САД</h2>
-          <p>
+          <h1>Oвој проект е поддржан од Амбасада на САД</h1>
+          <h2>
             Мислењата, откритијата и заклучоците или препораките изнесени овде
             се на имплементаторите/ авторите, и не ги одразуваат оние на Владата
             на САД
-          </p>
+          </h2>
           <img src={LogoUSA} alt="LogoUSA" />
         </div>
-        <h2>За сите информации обратете ни се на : <a href="mailto:info@borenka.mk">info@borenka.com</a></h2>
+        <h2>
+          За сите информации обратете ни се на :{" "}
+          <a href="mailto:info@borenka.mk">info@borenka.com</a>
+        </h2>
       </section>
     </div>
   );
