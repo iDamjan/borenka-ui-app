@@ -11,12 +11,14 @@ import ParkIcon from "@mui/icons-material/Park";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import HomeIcon from "@mui/icons-material/Home";
 import GroupWorkIcon from '@mui/icons-material/GroupWork';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 const pages = [
   { label: "Дома", path: "/home", icon: <HomeIcon /> },
   { label: "За Нас", path: "/about", icon: <AccountCircle/> },
   { label: "Засади Дрво", path: "/map", icon: <ParkIcon/> },
   { label: "Организатори", path: "/organizations", icon: <GroupWorkIcon/> },
+  { label: "Контакт", path: "/contact", icon: <PhoneIcon/> },
 ];
 
 export const MobileDrawer = () => {

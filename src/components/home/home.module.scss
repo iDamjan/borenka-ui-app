@@ -141,7 +141,7 @@
   .container {
     background-color: var(--background);
     background-image: url("../../static/home-background--mobile.svg");
-
+    justify-content: space-between;
     h2 {
       font-size: 25px;
     }
