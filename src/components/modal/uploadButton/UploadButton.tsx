@@ -83,6 +83,7 @@ export default function UploadButton({
         severity: "error",
         message: "Проблем! Обиди се повторно",
       });
+      console.log(error)
     } finally {
       setTimeout(() => {
         setPopupMessage({ isVisible: false, severity: "", message: "" });
