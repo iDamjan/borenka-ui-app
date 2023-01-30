@@ -1,7 +1,6 @@
 import classes from "./organizations.module.scss";
 import { useNavigate } from "react-router-dom";
 import LogoWhite from "../../static/logo-white.svg";
-import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
 import LogoScouts from "../../static/LogoScouts.png";
 import LogoNacionalniShumi from "../../static/LogoNacionalniShumi.png";
 import LogoZivotnaSredina from "../../static/LogoZivotnaSredina.png";
@@ -17,9 +16,6 @@ export const Organizations = () => {
           src={LogoWhite}
           alt="Logo-white"
           className={classes["logo_organizations"]}
-        />
-        <KeyboardReturnIcon
-          className={classes.backNavigation}
           onClick={() => navigate("/home")}
         />
         <div className={classes.details}>

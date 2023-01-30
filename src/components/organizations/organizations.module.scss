@@ -46,7 +46,7 @@ section {
     left: 0;
     top: 0;
     margin: 20px;
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
@@ -240,17 +240,21 @@ section {
     text-align: center;
     .organizations-logo {
       img {
-        max-width: 150px;
+        max-width: 200px;
+        max-height: 43px;
       }
     }
-    .usaSupport {
-      img {
-        max-width: 150px;
-      }
-    }
+
     .details {
       p {
         font-size: 14px;
+      }
+    }
+  }
+  .section-five {
+    .usaSupport {
+      img {
+        max-width: 200px;
       }
     }
   }
