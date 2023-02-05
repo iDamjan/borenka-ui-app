@@ -1,5 +1,7 @@
 import classes from "./organizations.module.scss";
 import { useNavigate } from "react-router-dom";
+import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
+
 import LogoWhite from "../../static/logo-white.svg";
 import LogoScouts from "../../static/LogoScouts.png";
 import LogoNacionalniShumi from "../../static/LogoNacionalniShumi.png";
@@ -18,6 +20,10 @@ export const Organizations = () => {
           className={classes["logo_organizations"]}
           onClick={() => navigate("/home")}
         />
+        <KeyboardReturnIcon
+          className={classes.backNavigation}
+          onClick={() => navigate("/home")}
+        />
         <div className={classes.details}>
           <button
             onClick={() => navigate("/home")}
@@ -27,20 +33,23 @@ export const Organizations = () => {
           </button>
           <h1>ЗА ОРГАНИЗАТОРИТЕ</h1>
           <h2>Сојуз на извидници на Македонија</h2>
-          <p>
+          <h2>
             ИЗВИДНИЦИТЕ СЕ НАЈГОЛЕМОТО И НАЈМОЌНОТО МЛАДИНСКО ДВИЖЕЊЕ ВО СВЕТОТ
-            СО НАД 50 МИЛИОНИ ЧЛЕНОВИ <br />
-            <br />
+            СО НАД 60 МИЛИОНИ ЧЛЕНОВИ
+          </h2>
+          <p>
             Мисијата на Сојузот на Извидници на Македонија е да придонесе во
             образованието на младите луѓе, низ систем на вредности засновани врз
             Извидничкиот Завет и Закони, да помогне и изгради подобар свет каде
             што луѓето се самоисполнети како индивидуи и имаат конструктивна
-            улога во општествотo <br />
+            улога во општествотo.
             <br />
-            СИМ релевантна, атрактивна и самоодржлива организација која
-            обединува млади луѓе преку современа прогресивна програма која ги
-            исполнува општествените потреби на младите и го гради нивниот
-            карактер врз база на позитивните извиднички вредности и приципи.
+            <br />
+            Програмата на СИМ обединува најразлични теми како дел од
+            едукативната патека на секој извидник. Преку активностите, членовите
+            се стекнуваат со животни вештини, вештини за лидерство, способност
+            за работа во тимови, лидерство, висока свест за животната средина,
+            одговорност, дисциплина и вистински животни вредности.
           </p>
         </div>
       </section>
@@ -79,9 +88,10 @@ export const Organizations = () => {
       </section>
       <section className={classes["section-four"]}>
         <div className={classes["organizations-logo"]}>
-          <h1>Организатори - Покровители</h1>
+          <h1>Организатори</h1>
           <img src={LogoScouts} alt="logo-scoutss" />
           <img src={LogoNacionalniShumi} alt="logo-nacionalni-shumi" />
+          <h1>Покровители</h1>
           <img src={LogoZivotnaSredina} alt="logo-zivotna-sredina" />
           <img src={LogoZemjodelstvo} alt="logo-zemjodelstvo" />
         </div>
@@ -89,12 +99,12 @@ export const Organizations = () => {
       <section className={classes["section-five"]}>
         <div className={classes.usaSupport}>
           <h1>Oвој проект е поддржан од Амбасада на САД</h1>
+          <img src={LogoUSA} alt="LogoUSA" />
           <h2>
             Мислењата, откритијата и заклучоците или препораките изнесени овде
             се на имплементаторите/ авторите, и не ги одразуваат оние на Владата
-            на САД
+            на САД.
           </h2>
-          <img src={LogoUSA} alt="LogoUSA" />
         </div>
         <h2>
           За сите информации обратете ни се на :{" "}

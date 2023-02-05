@@ -10,6 +10,7 @@ import { Home } from "./components/home/Home";
 import { About } from "./components/about/About";
 import { Organizations } from "./components/organizations/Organizations";
 import { ContextProvider } from "./context-api/upload-context";
+import { Contact } from "./components/contact/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="*" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
+          <Route path ="/contact" element = {<Contact />} />
           <Route path="/map" element={<ChooseRegion />} />
           <Route path="/about" element={<About />} />
           <Route path="/organizations" element={<Organizations />} />

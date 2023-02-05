@@ -4,6 +4,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 import Logo from "../../static/Logo.svg";
 import { MobileDrawer } from "./HomeMobileDrawerMenu";
 import ParkIcon from "@mui/icons-material/Park";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 const pages = [
   { label: "Дома", path: "/home" },
@@ -14,7 +16,6 @@ const pages = [
 ];
 
 export const Home = () => {
-  
   const navigate = useNavigate();
   const location = useLocation();
   const { pathname } = location;
@@ -22,14 +23,22 @@ export const Home = () => {
   const animation = (
     <div className={classes.treeCircle} onClick={() => navigate("/map")}>
       <ParkIcon />
-      <div className={`${classes.circle} ${classes.circle1}`}></div>
-      <div className={`${classes.circle} ${classes.circle2}`}></div>
+      <div className={`${classes.circle} ${classes.circle1}`}>Засади дрво</div>
+      <div className={`${classes.circle} ${classes.circle2}`}>Засади дрво</div>
       <div className={`${classes.circle} ${classes.circle3}`}>Засади дрво</div>
     </div>
   );
 
   return (
     <div className={classes.container}>
+      <div className={classes.socialMedia}>
+        <a href="https://www.instagram.com/scoutsmacedonia/?hl=en">
+          <InstagramIcon />
+        </a>
+        <a href="https://www.instagram.com/borenka.mk/?hl=en">
+          <FacebookIcon />
+        </a>
+      </div>
       <div className={classes.navbar}>
         <div className={classes.navigations}>
           <>
@@ -47,7 +56,7 @@ export const Home = () => {
         <img src={Logo} alt="Logo" className={classes.navbar__logo} />
         <MobileDrawer />
       </div>
-      <img className = {classes.tree} src={tree} alt="tree" />
+      <img className={classes.tree} src={tree} alt="tree" />
       <h2>
         Нацртај дрво, засади го во виртуелната шума и стани дел од БОРЕНКА -
         иницијатива за пошумување на опожарени подрачја во РС Македонија
