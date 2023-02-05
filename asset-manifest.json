@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/borenka-ui-app/static/css/main.8bb77e85.css",
-    "main.js": "/borenka-ui-app/static/js/main.e8096e7f.js",
+    "main.css": "/borenka-ui-app/static/css/main.ef3963b7.css",
+    "main.js": "/borenka-ui-app/static/js/main.7b2c3e87.js",
     "static/media/aboutUs-background3.svg": "/borenka-ui-app/static/media/aboutUs-background3.f699a4dba31bc9342321.svg",
     "static/media/aboutUs-background2.svg": "/borenka-ui-app/static/media/aboutUs-background2.e783e6a09be054b710fa.svg",
-    "static/media/aboutUs-background.svg": "/borenka-ui-app/static/media/aboutUs-background.6ca6325336ce53c609ab.svg",
+    "static/media/aboutUs-backgroundTwo.svg": "/borenka-ui-app/static/media/aboutUs-backgroundTwo.8dffc4b135a528688315.svg",
+    "static/media/aboutUs-background.svg": "/borenka-ui-app/static/media/aboutUs-background.b82c641910b651a102d3.svg",
     "static/media/background-trees.svg": "/borenka-ui-app/static/media/background-trees.06e4c5b3f1796720da0c.svg",
     "static/media/about-us-mobile-background2.svg": "/borenka-ui-app/static/media/about-us-mobile-background2.a8d7c786859d0ea90e42.svg",
     "static/media/about-us-mobile-background.svg": "/borenka-ui-app/static/media/about-us-mobile-background.1f11c69a3ea21244e076.svg",
@@ -59,11 +60,11 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/borenka-ui-app/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/borenka-ui-app/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/borenka-ui-app/index.html",
-    "main.8bb77e85.css.map": "/borenka-ui-app/static/css/main.8bb77e85.css.map",
-    "main.e8096e7f.js.map": "/borenka-ui-app/static/js/main.e8096e7f.js.map"
+    "main.ef3963b7.css.map": "/borenka-ui-app/static/css/main.ef3963b7.css.map",
+    "main.7b2c3e87.js.map": "/borenka-ui-app/static/js/main.7b2c3e87.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bb77e85.css",
-    "static/js/main.e8096e7f.js"
+    "static/css/main.ef3963b7.css",
+    "static/js/main.7b2c3e87.js"
   ]
 }
