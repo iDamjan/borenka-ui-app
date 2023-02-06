@@ -11,7 +11,7 @@ export const Preload = () => {
       {textAnimation && (
         <TypeAnimation
           sequence={[
-            "Добредојдовте во Боренка!", // Types 'One'
+            "Добредојдовте на Боренка!", // Types 'One'
             500, // Waits 1s
             "Засади дрво и помогни на природата...", // Deletes 'One' and types 'Two'
             500, // Waits 2s
