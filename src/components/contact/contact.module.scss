@@ -1,31 +1,93 @@
-.container{
-    background-color: var(--background);
-    background-image: url("../../static/aboutUs-backgroundTwo.svg");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    gap: 50ox;
-    align-items: flex-end;
-    h3{
-        margin-bottom: 25px;
+.container {
+  background-color: var(--background);
+  background-image: url("../../static/aboutUs-backgroundTwo.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .backNavigation {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 60px;
+    height: 20px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--secondary);
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(128, 128, 128, 0.212);
     }
-    a{
-        color: var(--secondary);
+  }
+
+  img {
+    max-width: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 20px;
+    &:hover {
+      cursor: pointer;
     }
+  }
+   .back-button__mobile{
+    display: none;
+   }
+}
+h3 {
+  margin-bottom: 25px;
+}
+a {
+  color: var(--secondary);
+}
+.contentRight {
+  .mobileNumber {
+    color: var(--secondary);
+    text-decoration: underline;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  text-align: right;
+}
+
+@media (max-width: 40em) {
+  .container {
+    flex-direction: column;
+    text-align: center;
     .contentRight {
-        .mobileNumber{
-         color: var(--secondary);
-         text-decoration: underline;
-            &:hover{
-                cursor: pointer;
-            }
-        }
-        text-align: right;
-        margin-bottom: 50px;
+      text-align: center;
     }
-    .contentLeft{
-        margin-bottom:600px;
+     .backNavigation {
+      display: none;
     }
+    img{
+        max-width: 150px;
+        position: relative;
+
+    }
+    .back-button__mobile {
+      width: 100%;
+      max-width: 250px;
+      background-color: var(--secondary);
+      border: none;
+      height: 40px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 40px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        cursor: pointer;
+        background-color: var(--secondary-transparent);
+      }
+    }
+  }
 }

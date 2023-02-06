@@ -6,6 +6,7 @@ import { MobileDrawer } from "./HomeMobileDrawerMenu";
 import ParkIcon from "@mui/icons-material/Park";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import { motion as m } from "framer-motion";
 
 const pages = [
   { label: "Дома", path: "/home" },
@@ -30,7 +31,12 @@ export const Home = () => {
   );
 
   return (
-    <div className={classes.container}>
+    <m.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
+      className={classes.container}
+    >
       <div className={classes.socialMedia}>
         <a href="https://www.instagram.com/scoutsmacedonia/?hl=en">
           <InstagramIcon />
@@ -62,6 +68,6 @@ export const Home = () => {
         иницијатива за пошумување на опожарени подрачја во РС Македонија
       </h2>
       {animation}
-    </div>
+    </m.div>
   );
 };

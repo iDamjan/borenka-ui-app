@@ -11,23 +11,43 @@ import { About } from "./components/about/About";
 import { Organizations } from "./components/organizations/Organizations";
 import { ContextProvider } from "./context-api/upload-context";
 import { Contact } from "./components/contact/Contact";
+import { useEffect, useState } from "react";
+import { Preload } from "./components/Preload/Preload";
 
 function App() {
-  console.log("damjan");
+  const [firstFlowAni, setFirstFlowAni] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem("firstFlowAnimation")) {
+      setFirstFlowAni(false);
+    } else {
+      setFirstFlowAni(true);
+      setTimeout(() => {
+        setFirstFlowAni(false);
+        localStorage.setItem("firstFlowAnimation", "false");
+      }, 7000);
+    }
+  }, []);
   return (
-    <ContextProvider>
-      <div className="App">
-        <Routes>
-          <Route path="*" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Home />} />
-          <Route path ="/contact" element = {<Contact />} />
-          <Route path="/map" element={<ChooseRegion />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/organizations" element={<Organizations />} />
-          <Route path="/map/:regionId" element={<Region />} />
-        </Routes>
-      </div>
-    </ContextProvider>
+    <>
+      {firstFlowAni ? (
+        <Preload />
+      ) : (
+        <ContextProvider>
+          <div className="App">
+            <Routes>
+              <Route path="*" element={<Navigate to="/home" />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/map" element={<ChooseRegion />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/organizations" element={<Organizations />} />
+              <Route path="/map/:regionId" element={<Region />} />
+            </Routes>
+          </div>
+        </ContextProvider>
+      )}
+    </>
   );
 }
 

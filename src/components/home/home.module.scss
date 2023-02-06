@@ -23,7 +23,7 @@
     height: 60px;
     svg {
       fill: var(--primary);
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
     }
@@ -156,10 +156,24 @@
   .mobileContainer {
     display: flex;
   }
+  .socialMediaMobile {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+    margin-top: auto;
+    path{
+      fill: #bae8c7;
+    
+    }
+  }
   .container {
     background-color: var(--background);
     background-image: url("../../static/home-background--mobile.svg");
     justify-content: space-between;
+    .socialMedia {
+      display: none;
+    }
     h2 {
       font-size: 25px;
     }

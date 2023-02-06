@@ -12,17 +12,18 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import HomeIcon from "@mui/icons-material/Home";
 import GroupWorkIcon from '@mui/icons-material/GroupWork';
 import PhoneIcon from '@mui/icons-material/Phone';
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 const pages = [
   { label: "Дома", path: "/home", icon: <HomeIcon /> },
-  { label: "За Нас", path: "/about", icon: <AccountCircle/> },
-  { label: "Засади Дрво", path: "/map", icon: <ParkIcon/> },
-  { label: "Организатори", path: "/organizations", icon: <GroupWorkIcon/> },
-  { label: "Контакт", path: "/contact", icon: <PhoneIcon/> },
+  { label: "За Нас", path: "/about", icon: <AccountCircle /> },
+  { label: "Засади Дрво", path: "/map", icon: <ParkIcon /> },
+  { label: "Организатори", path: "/organizations", icon: <GroupWorkIcon /> },
+  { label: "Контакт", path: "/contact", icon: <PhoneIcon /> },
 ];
 
 export const MobileDrawer = () => {
-  
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
   const { pathname } = location;
@@ -48,7 +49,6 @@ export const MobileDrawer = () => {
                 disablePadding
                 sx={{ textAlign: "center" }}
               >
-                
                 <Link
                   to={page.path}
                   key={index}
@@ -65,6 +65,14 @@ export const MobileDrawer = () => {
           </List>
         </Box>
       </div>
+      <div className={classes.socialMediaMobile}>
+        <a href="https://www.instagram.com/scoutsmacedonia/?hl=en">
+          <InstagramIcon />
+        </a>
+        <a href="https://www.instagram.com/borenka.mk/?hl=en">
+          <FacebookIcon />
+        </a>
+      </div>
       <p
         style={{
           color: "#bae8c7",
@@ -77,7 +85,7 @@ export const MobileDrawer = () => {
       </p>
     </>
   );
-  
+
   return (
     <div className={classes.mobileContainer}>
       <Box

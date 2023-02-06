@@ -1,10 +1,32 @@
 import classes from "./contact.module.scss";
+import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
+import { useNavigate } from "react-router-dom";
+import Logo from "../../static/Logo.svg";
+
 export const Contact = () => {
   const copyNumberToClipboard = () => {
     navigator.clipboard.writeText("+389 (0)2 522 455");
   };
+  const navigate = useNavigate();
+
   return (
     <div className={classes.container}>
+      <img
+        className={classes["logo_about-us"]}
+        src={Logo}
+        alt="logo"
+        onClick={() => navigate("/home")}
+      />
+      <KeyboardReturnIcon
+        className={classes.backNavigation}
+        onClick={() => navigate("/home")}
+      />
+      <button
+        onClick={() => navigate("/home")}
+        className={classes["back-button__mobile"]}
+      >
+        Оди назад
+      </button>
       <div className={classes.contentLeft}>
         <h2>Јавно претпријатие за стопанисување со државните шуми</h2>
         <h1>НАЦИОНАЛНИ ШУМИ</h1>
