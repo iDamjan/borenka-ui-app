@@ -13,6 +13,7 @@ import { ContextProvider } from "./context-api/upload-context";
 import { Contact } from "./components/contact/Contact";
 
 function App() {
+  console.log("damjan");
   return (
     <ContextProvider>
       <div className="App">
