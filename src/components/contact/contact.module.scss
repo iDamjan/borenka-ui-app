@@ -1,12 +1,14 @@
 .container {
   background-color: var(--background);
   background-image: url("../../static/aboutUs-backgroundTwo.svg");
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 100px;
   .backNavigation {
     position: absolute;
     left: 0;
@@ -44,7 +46,11 @@ h3 {
 a {
   color: var(--secondary);
 }
+.contentLeft{
+  margin-bottom: 250px;
+}
 .contentRight {
+  margin-top: 250px;
   .mobileNumber {
     color: var(--secondary);
     text-decoration: underline;
@@ -59,8 +65,13 @@ a {
   .container {
     flex-direction: column;
     text-align: center;
+    gap: 50px;
     .contentRight {
       text-align: center;
+      margin:0;
+    }
+    .contentLeft{
+      margin:0;
     }
      .backNavigation {
       display: none;

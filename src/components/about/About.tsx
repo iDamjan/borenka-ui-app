@@ -2,7 +2,7 @@ import classes from "./about.module.scss";
 import Logo from "../../static/Logo.svg";
 import { useNavigate } from "react-router-dom";
 import ParkIcon from "@mui/icons-material/Park";
-import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
+import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import { motion as m } from "framer-motion";
 
 export const About = () => {
@@ -11,7 +11,7 @@ export const About = () => {
     <m.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.2 }}
       className={classes.container}
     >
       <section className={classes["section-one"]}>
@@ -21,7 +21,8 @@ export const About = () => {
           alt="logo"
           onClick={() => navigate("/home")}
         />
-        <KeyboardReturnIcon
+        <ReplyAllIcon
+          sx={{ fontSize: "60px" }}
           className={classes.backNavigation}
           onClick={() => navigate("/home")}
         />

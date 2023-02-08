@@ -1,18 +1,23 @@
 import classes from "./organizations.module.scss";
 import { useNavigate } from "react-router-dom";
-import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
-
+import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import LogoWhite from "../../static/logo-white.svg";
 import LogoScouts from "../../static/LogoScouts.png";
 import LogoNacionalniShumi from "../../static/LogoNacionalniShumi.png";
 import LogoZivotnaSredina from "../../static/LogoZivotnaSredina.png";
 import LogoZemjodelstvo from "../../static/LogoZemjodelstvo.png";
 import LogoUSA from "../../static/LogoUSA.png";
+import { motion as m } from "framer-motion";
 
 export const Organizations = () => {
   const navigate = useNavigate();
   return (
-    <div className={classes.container}>
+    <m.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.2 }}
+      className={classes.container}
+    >
       <section className={classes["section-one"]}>
         <img
           src={LogoWhite}
@@ -20,7 +25,8 @@ export const Organizations = () => {
           className={classes["logo_organizations"]}
           onClick={() => navigate("/home")}
         />
-        <KeyboardReturnIcon
+        <ReplyAllIcon
+          sx={{ fontSize: "60px" }}
           className={classes.backNavigation}
           onClick={() => navigate("/home")}
         />
@@ -37,7 +43,11 @@ export const Organizations = () => {
             ИЗВИДНИЦИТЕ СЕ НАЈГОЛЕМОТО И НАЈМОЌНОТО МЛАДИНСКО ДВИЖЕЊЕ ВО СВЕТОТ
             СО НАД 60 МИЛИОНИ ЧЛЕНОВИ
           </h2>
-          <p>
+          <m.p
+            initial={{ opacity: 0, x: -200 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3 }}
+          >
             Мисијата на Сојузот на Извидници на Македонија е да придонесе во
             образованието на младите луѓе, низ систем на вредности засновани врз
             Извидничкиот Завет и Закони, да помогне и изгради подобар свет каде
@@ -50,7 +60,7 @@ export const Organizations = () => {
             се стекнуваат со животни вештини, вештини за лидерство, способност
             за работа во тимови, лидерство, висока свест за животната средина,
             одговорност, дисциплина и вистински животни вредности.
-          </p>
+          </m.p>
         </div>
       </section>
       <section className={classes["section-two"]}>
@@ -61,7 +71,11 @@ export const Organizations = () => {
             ПРЕТПРИЈАТИЕ КОЕ СТОПАНИСУВА СО ШУМИ И ШУМСКО ЗЕМЈИШТЕ ВО
             СОПСТВЕНОСТ НА РС МАКЕДОНИЈА
           </h2>
-          <p>
+          <m.p
+            initial={{ opacity: 0, x: -200 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 }}
+          >
             Шумите се природно добро од општ интерес, а стопанисувањето со
             шумите е дејност од јавен интерес. Со Законот за шуми утврдени се
             основните дејности, а тоа се:
@@ -76,25 +90,35 @@ export const Organizations = () => {
             капацитетите на претпријатието. Такви дејности се: лов, одгледување
             на дивеч, собирање и доработка на други шумски производи, ловен
             туризам и др.
-          </p>
+          </m.p>
         </div>
       </section>
       <section className={classes["section-tree"]}>
-        <div className={classes.details}>
+        <m.div
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2 }}
+          className={classes.details}
+        >
           <h1>ПОКРОВИТЕЛИ</h1>
           <h2>Министерство за земјоделство, шумарство и водостопанство</h2>
           <h2>Министерство за животна средина и просторно планирање</h2>
-        </div>
+        </m.div>
       </section>
       <section className={classes["section-four"]}>
-        <div className={classes["organizations-logo"]}>
+        <m.div
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2 }}
+          className={classes["organizations-logo"]}
+        >
           <h1>Организатори</h1>
           <img src={LogoScouts} alt="logo-scoutss" />
           <img src={LogoNacionalniShumi} alt="logo-nacionalni-shumi" />
           <h1>Покровители</h1>
           <img src={LogoZivotnaSredina} alt="logo-zivotna-sredina" />
           <img src={LogoZemjodelstvo} alt="logo-zemjodelstvo" />
-        </div>
+        </m.div>
       </section>
       <section className={classes["section-five"]}>
         <div className={classes.usaSupport}>
@@ -111,6 +135,6 @@ export const Organizations = () => {
           <a href="mailto:info@borenka.mk">info@borenka.com</a>
         </h2>
       </section>
-    </div>
+    </m.div>
   );
 };

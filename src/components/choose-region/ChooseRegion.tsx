@@ -3,7 +3,7 @@ import Map from "./map/Map";
 import Logo from "../../static/Logo.svg";
 import classes from "./choose-region.module.scss";
 import { useNavigate } from "react-router-dom";
-import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
+import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import { MobileDrawer } from "../home/HomeMobileDrawerMenu";
 import { motion as m } from "framer-motion";
 export const ChooseRegion = () => {
@@ -23,7 +23,8 @@ export const ChooseRegion = () => {
         <img src={Logo} alt="logo" onClick={() => navigate("/home")} />
         <MobileDrawer />
 
-        <KeyboardReturnIcon
+        <ReplyAllIcon
+          sx={{ fontSize: "60px" }}
           className={classes.backNavigation}
           onClick={() => navigate("/home")}
         />
