@@ -3,7 +3,7 @@ import classes from "./loader.module.scss";
 
 const Loader = () => {
   return (
-    <div className={classes.laoder}>
+    <div className={classes.loader}>
       <CircularProgress />
     </div>
   );
