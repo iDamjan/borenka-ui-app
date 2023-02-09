@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/borenka-ui-app/static/css/main.96c99066.css",
-    "main.js": "/borenka-ui-app/static/js/main.1246a1f0.js",
-    "static/css/785.1d12af13.chunk.css": "/borenka-ui-app/static/css/785.1d12af13.chunk.css",
-    "static/js/785.c7eb5424.chunk.js": "/borenka-ui-app/static/js/785.c7eb5424.chunk.js",
+    "main.css": "/borenka-ui-app/static/css/main.937dee39.css",
+    "main.js": "/borenka-ui-app/static/js/main.2873f114.js",
+    "static/css/430.21e1ddd0.chunk.css": "/borenka-ui-app/static/css/430.21e1ddd0.chunk.css",
+    "static/js/430.b0b86cc7.chunk.js": "/borenka-ui-app/static/js/430.b0b86cc7.chunk.js",
     "static/media/aboutUs-background3.svg": "/borenka-ui-app/static/media/aboutUs-background3.e278a3f571794b76d3b9.svg",
     "static/media/aboutUs-background2.svg": "/borenka-ui-app/static/media/aboutUs-background2.2ff5624bced5d7330996.svg",
     "static/media/aboutUs-backgroundTwo.svg": "/borenka-ui-app/static/media/aboutUs-backgroundTwo.e2462deee29b4ddd3701.svg",
     "static/media/aboutUs-background.svg": "/borenka-ui-app/static/media/aboutUs-background.7dd67d0ce95b957716cc.svg",
-    "static/media/background-trees.svg": "/borenka-ui-app/static/media/background-trees.6482a5165d0598a9dfff.svg",
+    "static/media/background-trees.svg": "/borenka-ui-app/static/media/background-trees.6482a5165d0598a9dfffa34af4f8af9b.svg",
     "static/media/about-us-mobile-background2.svg": "/borenka-ui-app/static/media/about-us-mobile-background2.a79a4a95e56098b4fc85.svg",
     "static/media/about-us-mobile-background.svg": "/borenka-ui-app/static/media/about-us-mobile-background.f8352e928138d88eb2a4.svg",
     "static/media/home-background--mobile.svg": "/borenka-ui-app/static/media/home-background--mobile.295379c7f849691a2fd1.svg",
@@ -62,13 +62,13 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/borenka-ui-app/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/borenka-ui-app/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/borenka-ui-app/index.html",
-    "main.96c99066.css.map": "/borenka-ui-app/static/css/main.96c99066.css.map",
-    "main.1246a1f0.js.map": "/borenka-ui-app/static/js/main.1246a1f0.js.map",
-    "785.1d12af13.chunk.css.map": "/borenka-ui-app/static/css/785.1d12af13.chunk.css.map",
-    "785.c7eb5424.chunk.js.map": "/borenka-ui-app/static/js/785.c7eb5424.chunk.js.map"
+    "main.937dee39.css.map": "/borenka-ui-app/static/css/main.937dee39.css.map",
+    "main.2873f114.js.map": "/borenka-ui-app/static/js/main.2873f114.js.map",
+    "430.21e1ddd0.chunk.css.map": "/borenka-ui-app/static/css/430.21e1ddd0.chunk.css.map",
+    "430.b0b86cc7.chunk.js.map": "/borenka-ui-app/static/js/430.b0b86cc7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96c99066.css",
-    "static/js/main.1246a1f0.js"
+    "static/css/main.937dee39.css",
+    "static/js/main.2873f114.js"
   ]
 }
