@@ -6,7 +6,8 @@ import { useNavigate } from "react-router-dom";
 import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import { MobileDrawer } from "../home/HomeMobileDrawerMenu";
 import { motion as m } from "framer-motion";
-export const ChooseRegion = () => {
+
+const ChooseRegion = () => {
   const [currentHoveredRegion, setCurrentHoveredRegion] = useState<string>(
     "Избери регион и посади виртуелно дрво"
   );
@@ -37,3 +38,5 @@ export const ChooseRegion = () => {
     </m.div>
   );
 };
+
+export default ChooseRegion;
