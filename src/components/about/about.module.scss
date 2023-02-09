@@ -46,14 +46,13 @@ section {
     margin: 20px;
     padding: 15px;
     border-radius: 5px;
-    color: var(--secondary);;
+    color: var(--secondary);
 
     &:hover {
       cursor: pointer;
       background-color: rgba(128, 128, 128, 0.212);
       border-radius: 50%;
     }
-
   }
 
   img {
@@ -183,105 +182,113 @@ section {
   section {
     padding: 35px;
     justify-content: none;
+    scroll-snap-align: unset;
+    scroll-behavior: unset;
+    height: auto;
   }
-  .details {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 1000px;
-    li {
-      text-align: left;
-    }
-    h1 {
-      font-size: 25px;
-    }
-    p {
-      font-size: 13px;
-    }
-    h2 {
-      font-size: 12px;
-    }
-  }
-  .section-one {
-    background-color: var(--background);
-    background-image: url("../../static/about-us-mobile-background.svg");
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .backNavigation {
-      display: none;
-    }
-    .sectionOneContent {
-      display: block;
-
-      .partOne {
-        margin: 0;
-      }
-      .partTwo {
-        text-align: center;
-      }
-    }
-    img {
-      max-width: 150px;
-      position: relative;
-      margin-bottom: 50px;
-    }
-    .back-button__mobile {
-      width: 100%;
-      max-width: 250px;
-      background-color: var(--secondary);
-      border: none;
-      height: 40px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      margin-bottom: 40px;
-      border-radius: 5px;
+  .container {
+    scroll-snap-type: unset;
+    overflow-y: unset;
+    overscroll-behavior: unset;
+    .details {
       display: flex;
       justify-content: center;
+      flex-direction: column;
       align-items: center;
-      &:hover {
-        cursor: pointer;
-        background-color: var(--secondary-transparent);
+      text-align: center;
+      max-width: 1000px;
+      li {
+        text-align: left;
       }
-    }
-  }
-
-  .section-two {
-    background-image: url("../../static/about-us-mobile-background2.svg");
-    background-repeat: no-repeat;
-
-    .sectionTwoContent {
-      display: block;
-      .partOne {
-        margin: 0;
+      h1 {
+        font-size: 25px;
       }
-      .partTwo {
-        margin: 0;
-        text-align: center;
-      }
-    }
-  }
-  .section-tree {
-    background-image: url("../../static/about-us-mobile-background.svg");
-    background-repeat: no-repeat;
-
-    .details {
       p {
-        font-size: 14px;
+        font-size: 13px;
+      }
+      h2 {
+        font-size: 12px;
       }
     }
-  }
-  .section-four {
-    background-image: url("../../static/about-us-mobile-background2.svg");
-    background-repeat: no-repeat;
+    .section-one {
+      background-color: var(--background);
+      background-image: url("../../static/about-us-mobile-background.svg");
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .backNavigation {
+        display: none;
+      }
+      .sectionOneContent {
+        display: block;
 
-    .details {
-      p {
-        font-size: 14px;
+        .partOne {
+          margin: 0;
+        }
+        .partTwo {
+          text-align: center;
+        }
+      }
+      img {
+        max-width: 150px;
+        position: relative;
+        margin-bottom: 50px;
+      }
+      .back-button__mobile {
+        width: 100%;
+        max-width: 250px;
+        background-color: var(--secondary);
+        border: none;
+        height: 40px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 40px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          cursor: pointer;
+          background-color: var(--secondary-transparent);
+        }
+      }
+    }
+
+    .section-two {
+      background-image: url("../../static/about-us-mobile-background2.svg");
+      background-repeat: no-repeat;
+
+      .sectionTwoContent {
+        display: block;
+        .partOne {
+          margin: 0;
+        }
+        .partTwo {
+          margin: 0;
+          text-align: center;
+        }
+      }
+    }
+    .section-tree {
+      background-image: url("../../static/about-us-mobile-background.svg");
+      background-repeat: no-repeat;
+
+      .details {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    .section-four {
+      background-image: url("../../static/about-us-mobile-background2.svg");
+      background-repeat: no-repeat;
+
+      .details {
+        p {
+          font-size: 14px;
+        }
       }
     }
   }

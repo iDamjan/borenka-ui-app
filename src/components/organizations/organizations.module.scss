@@ -32,7 +32,7 @@ section {
     margin: 20px;
     padding: 15px;
     border-radius: 5px;
-    color: var(--secondary);;
+    color: var(--secondary);
 
     &:hover {
       cursor: pointer;
@@ -156,105 +156,113 @@ section {
   section {
     padding: 35px;
     justify-content: none;
+    scroll-snap-align: unset;
+    scroll-behavior: unset;
+    height: auto;
   }
+  .container {
+    scroll-snap-type: unset;
+    overflow-y: unset;
+    overscroll-behavior: unset;
 
-  .details {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 1000px;
-    li {
-      text-align: left;
-    }
-    h1 {
-      font-size: 25px;
-    }
-    p {
-      font-size: 13px;
-    }
-    h2 {
-      font-size: 12px;
-    }
-  }
-
-  .section-one {
-    background-color: var(--primary);
-    background-image: url("../../static/about-us-mobile-background.svg");
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .backNavigation {
-      display: none;
-    }
     .details {
-      .back-button__mobile {
-        width: 100%;
-        max-width: 250px;
-        background-color: var(--secondary);
-        border: none;
-        height: 40px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        margin-bottom: 40px;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &:hover {
-          cursor: pointer;
-          background-color: var(--secondary-transparent);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 1000px;
+      li {
+        text-align: left;
+      }
+      h1 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 13px;
+      }
+      h2 {
+        font-size: 12px;
+      }
+    }
+
+    .section-one {
+      background-color: var(--primary);
+      background-image: url("../../static/about-us-mobile-background.svg");
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .backNavigation {
+        display: none;
+      }
+      .details {
+        .back-button__mobile {
+          width: 100%;
+          max-width: 250px;
+          background-color: var(--secondary);
+          border: none;
+          height: 40px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          margin-bottom: 40px;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:hover {
+            cursor: pointer;
+            background-color: var(--secondary-transparent);
+          }
+        }
+      }
+      img {
+        max-width: 150px;
+        position: relative;
+        margin-bottom: 50px;
+      }
+    }
+
+    .section-two {
+      background-image: url("../../static/about-us-mobile-background2.svg");
+      background-repeat: no-repeat;
+      .details {
+        p {
+          font-size: 14px;
         }
       }
     }
-    img {
-      max-width: 150px;
-      position: relative;
-      margin-bottom: 50px;
+    .section-tree {
+      background-image: url("../../static/about-us-mobile-background.svg");
+      .details {
+        p {
+          font-size: 14px;
+        }
+      }
     }
-  }
+    .section-four {
+      background-image: url("../../static/about-us-mobile-background2.svg");
+      text-align: center;
+      .organizations-logo {
+        img {
+          max-width: 200px;
+          max-height: 45px;
+        }
+      }
 
-  .section-two {
-    background-image: url("../../static/about-us-mobile-background2.svg");
-    background-repeat: no-repeat;
-    .details {
-      p {
-        font-size: 14px;
+      .details {
+        p {
+          font-size: 14px;
+        }
       }
     }
-  }
-  .section-tree {
-    background-image: url("../../static/about-us-mobile-background.svg");
-    .details {
-      p {
-        font-size: 14px;
-      }
-    }
-  }
-  .section-four {
-    background-image: url("../../static/about-us-mobile-background2.svg");
-    text-align: center;
-    .organizations-logo {
-      img {
-        max-width: 200px;
-        max-height: 45px;
-      }
-    }
-
-    .details {
-      p {
-        font-size: 14px;
-      }
-    }
-  }
-  .section-five {
-    text-align: center;
-    .usaSupport {
-      img {
-        max-width: 200px;
+    .section-five {
+      text-align: center;
+      .usaSupport {
+        img {
+          max-width: 200px;
+        }
       }
     }
   }

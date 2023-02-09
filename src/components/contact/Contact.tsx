@@ -1,5 +1,5 @@
 import classes from "./contact.module.scss";
-import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
+import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import { useNavigate } from "react-router-dom";
 import Logo from "../../static/Logo.svg";
 
@@ -17,7 +17,8 @@ export const Contact = () => {
         alt="logo"
         onClick={() => navigate("/home")}
       />
-      <KeyboardReturnIcon
+      <ReplyAllIcon
+        sx={{ fontSize: "60px" }}
         className={classes.backNavigation}
         onClick={() => navigate("/home")}
       />
