@@ -12,6 +12,7 @@ import { ContextProvider } from "./context-api/upload-context";
 import { Contact } from "./components/contact/Contact";
 import { useEffect, useState, Suspense, lazy } from "react";
 import { Preload } from "./components/Preload/Preload";
+import Loader from "./components/loader/Loader";
 
 function App() {
   const [firstFlowAni, setFirstFlowAni] = useState(false);
@@ -37,17 +38,17 @@ function App() {
       ) : (
         <ContextProvider>
           <div className="App">
-            <Routes>
-              <Route path="*" element={<Navigate to="/home" />} />
-              <Route path="/home" element={<Home />} />
-              <Route path="/contact" element={<Contact />} />
-              <Suspense fallback={<div>Loading....</div>}>
+            <Suspense fallback={<Loader />}>
+              <Routes>
+                <Route path="*" element={<Navigate to="/home" />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/contact" element={<Contact />} />
                 <Route path="/map" element={<ChooseRegion />} />
-              </Suspense>
-              <Route path="/about" element={<About />} />
-              <Route path="/organizations" element={<Organizations />} />
-              <Route path="/map/:regionId" element={<Region />} />
-            </Routes>
+                <Route path="/about" element={<About />} />
+                <Route path="/organizations" element={<Organizations />} />
+                <Route path="/map/:regionId" element={<Region />} />
+              </Routes>
+            </Suspense>
           </div>
         </ContextProvider>
       )}
