@@ -17,7 +17,7 @@ section {
 .section-one {
   background-color: var(--background);
   position: relative;
-  background-image: url("../../static/aboutUs-background.svg");
+  background-image: url("../../static/aboutUs-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   .back-button__mobile {
@@ -99,7 +99,7 @@ section {
 
 .section-four {
   background-color: var(--background);
-  background-image: url("../../static/aboutUs-background.svg");
+  background-image: url("../../static/aboutUs-background.png");
   background-size: cover;
   button {
     width: 100%;

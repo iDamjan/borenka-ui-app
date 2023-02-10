@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import { MobileDrawer } from "../home/HomeMobileDrawerMenu";
 import { motion as m } from "framer-motion";
-import backgroundTress from "../../static/background-trees.svg";
+import backgroundTress from "../../static/background-trees.jpg";
 import { ModalInstructions } from "./modal-instructions/ModalInstructions";
 const ChooseRegion = () => {
   const [currentHoveredRegion, setCurrentHoveredRegion] = useState<string>(
