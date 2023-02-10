@@ -4,8 +4,9 @@ import UploadModal from "../modal/UploadModal";
 import { useNavigate } from "react-router-dom";
 import Logo from "../../static/Logo.svg";
 import { UploadModalMobile } from "../modal/UploadModalMobile";
-import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
 import { MobileDrawer } from "../home/HomeMobileDrawerMenu";
+import ReplyAllIcon from "@mui/icons-material/ReplyAll";
+
 import { getRegionById } from "../utils/getRegionById";
 
 interface RegionData {
@@ -24,7 +25,8 @@ export const Region = () => {
   return (
     <div className={classes.container}>
       <div className={classes["container__header"]}>
-        <KeyboardReturnIcon
+        <ReplyAllIcon
+          sx={{ fontSize: "60px" }}
           className={classes.backNavigation}
           onClick={() => navigate("/map")}
         />

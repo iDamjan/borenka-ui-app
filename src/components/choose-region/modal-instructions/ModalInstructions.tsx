@@ -15,6 +15,8 @@ const style = {
   padding: "50px",
   borderRadius: "10px",
   fontFamily: "Pangolin",
+  color: "var(--primary)",
+  opacity: 0.9,
 };
 
 export const ModalInstructions = () => {
