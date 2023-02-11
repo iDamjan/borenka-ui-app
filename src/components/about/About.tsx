@@ -5,7 +5,7 @@ import ParkIcon from "@mui/icons-material/Park";
 import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import { motion as m } from "framer-motion";
 
-export const About = () => {
+const About = () => {
   const navigate = useNavigate();
   return (
     <m.div
@@ -175,3 +175,5 @@ export const About = () => {
     </m.div>
   );
 };
+
+export default About;

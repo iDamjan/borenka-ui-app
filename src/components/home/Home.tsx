@@ -16,7 +16,7 @@ const pages = [
   { label: "Контакт", path: "/contact" },
 ];
 
-export const Home = () => {
+const Home = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { pathname } = location;
@@ -71,3 +71,4 @@ export const Home = () => {
     </m.div>
   );
 };
+export default Home;

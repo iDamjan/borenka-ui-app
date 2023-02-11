@@ -3,11 +3,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import { Region } from "./components/region/Region";
 import { Route, Routes, Navigate } from "react-router-dom";
-import { Home } from "./components/home/Home";
-import { About } from "./components/about/About";
-import { Organizations } from "./components/organizations/Organizations";
 import { ContextProvider } from "./context-api/upload-context";
 import { Contact } from "./components/contact/Contact";
 import { useEffect, useState, Suspense, lazy } from "react";
@@ -20,6 +16,13 @@ function App() {
   const ChooseRegion = lazy(
     () => import("./components/choose-region/ChooseRegion")
   );
+  const About = lazy(() => import("./components/about/About"));
+  const Home = lazy(() => import("./components/home/Home"));
+  const Organizations = lazy(
+    () => import("./components/organizations/Organizations")
+  );
+  const Region = lazy(() => import("./components/region/Region"));
+
   useEffect(() => {
     if (localStorage.getItem("firstFlowAnimation")) {
       setFirstFlowAni(false);
@@ -31,6 +34,7 @@ function App() {
       }, 7000);
     }
   }, []);
+
   return (
     <>
       {firstFlowAni ? (

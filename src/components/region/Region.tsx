@@ -6,7 +6,6 @@ import Logo from "../../static/Logo.svg";
 import { UploadModalMobile } from "../modal/UploadModalMobile";
 import { MobileDrawer } from "../home/HomeMobileDrawerMenu";
 import ReplyAllIcon from "@mui/icons-material/ReplyAll";
-
 import { getRegionById } from "../utils/getRegionById";
 
 interface RegionData {
@@ -14,7 +13,7 @@ interface RegionData {
   id: string;
   image: string;
 }
-export const Region = () => {
+const Region = () => {
   const { regionId } = useParams();
   const navigate = useNavigate();
 
@@ -51,3 +50,4 @@ export const Region = () => {
     </div>
   );
 };
+export default Region;

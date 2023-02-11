@@ -9,7 +9,7 @@ import LogoZemjodelstvo from "../../static/LogoZemjodelstvo.png";
 import LogoUSA from "../../static/LogoUSA.png";
 import { motion as m } from "framer-motion";
 
-export const Organizations = () => {
+const Organizations = () => {
   const navigate = useNavigate();
   return (
     <m.div
@@ -138,3 +138,5 @@ export const Organizations = () => {
     </m.div>
   );
 };
+
+export default Organizations;
