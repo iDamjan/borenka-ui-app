@@ -10,7 +10,7 @@ import { ModalInstructions } from "./modal-instructions/ModalInstructions";
 import backgroundTrees from "../../static/background-trees.jpg";
 import { WrongRegionModal } from "./wrong-region-modal/WrongRegionModal";
 
-const ChooseRegion = ({ trees }: any) => {
+const ChooseRegion = () => {
   const [currentHoveredRegion, setCurrentHoveredRegion] = useState<string>(
     "Избери регион и посади виртуелно дрво"
   );

@@ -8,7 +8,6 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "100%",
   maxWidth: "600px",
   backgroundColor: "white",
   border: "none",
@@ -24,16 +23,18 @@ export const ModalInstructions = () => {
   const [isModalOpen, setIsModalOpen] = useState(true);
 
   useEffect(() => {
-    if (localStorage.getItem("firstFlowAnimation")) {
+    if (localStorage.getItem("modalInstruction")) {
       setIsModalOpen(false);
     } else {
       setIsModalOpen(true);
-      localStorage.setItem("firstFlowAnimation", "false");
+      setTimeout(() => {
+        localStorage.setItem("modalInstruction", "false");
+      }, 100);
     }
   }, []);
 
   return (
-    <div className={classes.container}>
+    <div>
       <Modal
         open={isModalOpen}
         onClose={handleClose}
@@ -41,7 +42,7 @@ export const ModalInstructions = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <div>
+          <div className={classes.container}>
             <h1>Посади дрво и стани дел од Боренка</h1>
             <p>
               Изберете опожарено подрачје, кликнете и посадете го виртуелното

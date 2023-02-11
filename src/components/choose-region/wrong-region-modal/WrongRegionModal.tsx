@@ -9,7 +9,6 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "100%",
   maxWidth: "600px",
   backgroundColor: "white",
   border: "none",
@@ -24,7 +23,7 @@ export const WrongRegionModal = () => {
   const handleClose = () => setIsWrongModalOpen(false);
   const { setIsWrongModalOpen, isWrongModalOpen }: any = useContext(ContextApi);
   return (
-    <div className={classes.container}>
+    <div>
       <Modal
         open={isWrongModalOpen}
         onClose={handleClose}
@@ -32,8 +31,8 @@ export const WrongRegionModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <div>
-            <h1>Изберете некое од опожарените подрачја!</h1>
+          <div className={classes.container}>
+            <h1>Одберете некоја од опожарените области!</h1>
           </div>
         </Box>
       </Modal>
