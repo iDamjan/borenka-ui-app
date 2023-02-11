@@ -52,6 +52,7 @@ export const MobileDrawer = () => {
                 <Link
                   to={page.path}
                   key={index}
+                  onClick={() => setMobileOpen(false)}
                   className={
                     pathname === page.path ? classes.active : classes.link
                   }
