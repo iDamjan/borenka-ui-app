@@ -33,7 +33,7 @@ export const WrongRegionModal = () => {
       >
         <Box sx={style}>
           <div>
-            <h1>Избере некое од опожарените подрачја!</h1>
+            <h1>Изберете некое од опожарените подрачја!</h1>
           </div>
         </Box>
       </Modal>
