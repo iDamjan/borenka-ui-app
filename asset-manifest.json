@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/borenka-ui-app/static/css/main.a6847ef2.css",
-    "main.js": "/borenka-ui-app/static/js/main.b3db0ce5.js",
-    "static/css/630.e16d5bd8.chunk.css": "/borenka-ui-app/static/css/630.e16d5bd8.chunk.css",
-    "static/js/630.97cf1eaf.chunk.js": "/borenka-ui-app/static/js/630.97cf1eaf.chunk.js",
+    "main.js": "/borenka-ui-app/static/js/main.1fb1b11d.js",
+    "static/css/191.d57380fc.chunk.css": "/borenka-ui-app/static/css/191.d57380fc.chunk.css",
+    "static/js/191.3e845e81.chunk.js": "/borenka-ui-app/static/js/191.3e845e81.chunk.js",
     "static/css/285.04621477.chunk.css": "/borenka-ui-app/static/css/285.04621477.chunk.css",
     "static/js/285.54f5e229.chunk.js": "/borenka-ui-app/static/js/285.54f5e229.chunk.js",
     "static/css/383.1a4eb87a.chunk.css": "/borenka-ui-app/static/css/383.1a4eb87a.chunk.css",
@@ -12,6 +12,7 @@
     "static/js/424.a25973dc.chunk.js": "/borenka-ui-app/static/js/424.a25973dc.chunk.js",
     "static/css/796.48f132ae.chunk.css": "/borenka-ui-app/static/css/796.48f132ae.chunk.css",
     "static/js/796.aeb64119.chunk.js": "/borenka-ui-app/static/js/796.aeb64119.chunk.js",
+    "static/js/3.c8840cb8.chunk.js": "/borenka-ui-app/static/js/3.c8840cb8.chunk.js",
     "static/js/0.5a45c99f.chunk.js": "/borenka-ui-app/static/js/0.5a45c99f.chunk.js",
     "static/js/359.ad341546.chunk.js": "/borenka-ui-app/static/js/359.ad341546.chunk.js",
     "static/media/aboutUs-background3.svg": "/borenka-ui-app/static/media/aboutUs-background3.e278a3f571794b76d3b9.svg",
@@ -73,9 +74,9 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/borenka-ui-app/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/borenka-ui-app/index.html",
     "main.a6847ef2.css.map": "/borenka-ui-app/static/css/main.a6847ef2.css.map",
-    "main.b3db0ce5.js.map": "/borenka-ui-app/static/js/main.b3db0ce5.js.map",
-    "630.e16d5bd8.chunk.css.map": "/borenka-ui-app/static/css/630.e16d5bd8.chunk.css.map",
-    "630.97cf1eaf.chunk.js.map": "/borenka-ui-app/static/js/630.97cf1eaf.chunk.js.map",
+    "main.1fb1b11d.js.map": "/borenka-ui-app/static/js/main.1fb1b11d.js.map",
+    "191.d57380fc.chunk.css.map": "/borenka-ui-app/static/css/191.d57380fc.chunk.css.map",
+    "191.3e845e81.chunk.js.map": "/borenka-ui-app/static/js/191.3e845e81.chunk.js.map",
     "285.04621477.chunk.css.map": "/borenka-ui-app/static/css/285.04621477.chunk.css.map",
     "285.54f5e229.chunk.js.map": "/borenka-ui-app/static/js/285.54f5e229.chunk.js.map",
     "383.1a4eb87a.chunk.css.map": "/borenka-ui-app/static/css/383.1a4eb87a.chunk.css.map",
@@ -89,6 +90,6 @@
   },
   "entrypoints": [
     "static/css/main.a6847ef2.css",
-    "static/js/main.b3db0ce5.js"
+    "static/js/main.1fb1b11d.js"
   ]
 }

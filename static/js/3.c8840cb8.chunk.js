@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkborenka_ui_app=self.webpackChunkborenka_ui_app||[]).push([[3],{6003:function(e,a,p){e.exports=p.p+"static/media/background-trees.40304ce78cc1d14a4616.jpg"}}]);
