@@ -69,7 +69,7 @@ section {
 
 .section-two {
   background-color: var(--background);
-  background-image: url("../../static/aboutUs-backgroundTwo.svg");
+  background-image: url("../../static/aboutUs-backgroundTwo.png");
   background-repeat: no-repeat;
   background-size: cover;
   .sectionTwoContent {
@@ -92,7 +92,7 @@ section {
 
 .section-tree {
   background-color: var(--background);
-  background-image: url("../../static/aboutUs-background3.svg");
+  background-image: url("../../static/aboutUs-background3.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -212,7 +212,7 @@ section {
     }
     .section-one {
       background-color: var(--background);
-      background-image: url("../../static/about-us-mobile-background.svg");
+      background-image: url("../../static/about-us-mobile-background.png");
       background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
@@ -257,7 +257,7 @@ section {
     }
 
     .section-two {
-      background-image: url("../../static/about-us-mobile-background2.svg");
+      background-image: url("../../static/about-us-mobile-background.png");
       background-repeat: no-repeat;
 
       .sectionTwoContent {
@@ -272,7 +272,7 @@ section {
       }
     }
     .section-tree {
-      background-image: url("../../static/about-us-mobile-background.svg");
+      background-image: url("../../static/about-us-mobile-background.png");
       background-repeat: no-repeat;
 
       .details {

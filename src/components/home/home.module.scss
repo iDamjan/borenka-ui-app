@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100%;
   background-color: var(--background);
-  background-image: url("../../static/home-background.svg");
+  background-image: url("../../static/home-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -169,7 +169,7 @@
   }
   .container {
     background-color: var(--background);
-    background-image: url("../../static/home-background--mobile.svg");
+    background-image: url("../../static/home-background--mobile.png");
     justify-content: space-between;
     .socialMedia {
       display: none;

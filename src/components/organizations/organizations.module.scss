@@ -54,7 +54,7 @@ section {
 
 .section-two {
   background-color: var(--primary);
-  background-image: url("../../static/aboutUs-background2.svg");
+  background-image: url("../../static/aboutUs-backgroundTwo.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -188,7 +188,7 @@ section {
 
     .section-one {
       background-color: var(--primary);
-      background-image: url("../../static/about-us-mobile-background.svg");
+      background-image: url("../../static/about-us-mobile-background.png");
       background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
@@ -234,7 +234,7 @@ section {
       }
     }
     .section-tree {
-      background-image: url("../../static/about-us-mobile-background.svg");
+      background-image: url("../../static/about-us-mobile-background.png");
       .details {
         p {
           font-size: 14px;
