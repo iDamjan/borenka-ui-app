@@ -1,26 +1,30 @@
-import { useState } from "react";
 import Map from "./map/Map";
 import Logo from "../../static/Logo.svg";
+import { useState } from "react";
 import classes from "./choose-region.module.scss";
 import { useNavigate } from "react-router-dom";
 import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import { MobileDrawer } from "../home/HomeMobileDrawerMenu";
 import { motion as m } from "framer-motion";
-import backgroundTress from "../../static/background-trees.jpg";
 import { ModalInstructions } from "./modal-instructions/ModalInstructions";
+import backgroundTrees from "../../static/background-trees.jpg";
+
 const ChooseRegion = () => {
   const [currentHoveredRegion, setCurrentHoveredRegion] = useState<string>(
     "Избери регион и посади виртуелно дрво"
   );
   const navigate = useNavigate();
 
+  const myStyle = {
+    backgroundImage: `url(${backgroundTrees})`,
+  };
   return (
     <m.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4 }}
       className={classes.container}
-      style={{ backgroundImage: `url(${backgroundTress})` }}
+      style={myStyle}
     >
       <ModalInstructions />
       <div className={classes["container__header"]}>
