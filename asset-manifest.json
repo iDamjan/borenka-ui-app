@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/borenka-ui-app/static/css/main.3202749c.css",
-    "main.js": "/borenka-ui-app/static/js/main.36c388d0.js",
+    "main.css": "/borenka-ui-app/static/css/main.0751fdf6.css",
+    "main.js": "/borenka-ui-app/static/js/main.1e1252e0.js",
     "static/css/630.0e886507.chunk.css": "/borenka-ui-app/static/css/630.0e886507.chunk.css",
-    "static/js/630.105c682d.chunk.js": "/borenka-ui-app/static/js/630.105c682d.chunk.js",
+    "static/js/630.05a02494.chunk.js": "/borenka-ui-app/static/js/630.05a02494.chunk.js",
     "static/media/aboutUs-background3.svg": "/borenka-ui-app/static/media/aboutUs-background3.e278a3f571794b76d3b9.svg",
     "static/media/aboutUs-background2.svg": "/borenka-ui-app/static/media/aboutUs-background2.2ff5624bced5d7330996.svg",
     "static/media/aboutUs-backgroundTwo.svg": "/borenka-ui-app/static/media/aboutUs-backgroundTwo.e2462deee29b4ddd3701.svg",
-    "static/media/aboutUs-background.png": "/borenka-ui-app/static/media/aboutUs-background.8a092e81d732bfcb275d.png",
-    "static/media/background-trees.jpg": "/borenka-ui-app/static/media/background-trees.7e6b40b46d4d4e49d771.jpg",
     "static/media/about-us-mobile-background2.svg": "/borenka-ui-app/static/media/about-us-mobile-background2.a79a4a95e56098b4fc85.svg",
     "static/media/about-us-mobile-background.svg": "/borenka-ui-app/static/media/about-us-mobile-background.f8352e928138d88eb2a4.svg",
     "static/media/home-background--mobile.svg": "/borenka-ui-app/static/media/home-background--mobile.295379c7f849691a2fd1.svg",
     "static/media/Logo.svg": "/borenka-ui-app/static/media/Logo.fd9bb3f7ea756f20ffdc2639a2d088a9.svg",
     "static/media/home-background.svg": "/borenka-ui-app/static/media/home-background.40a16f840c08d94a123d.svg",
+    "static/media/background-trees.jpg": "/borenka-ui-app/static/media/background-trees.40304ce78cc1d14a4616.jpg",
     "static/media/logo-white.svg": "/borenka-ui-app/static/media/logo-white.36326936b9aff551ad3680ee84449f11.svg",
+    "static/media/aboutUs-background.png": "/borenka-ui-app/static/media/aboutUs-background.06226febe917d2df67d2.png",
     "static/media/LogoZivotnaSredina.png": "/borenka-ui-app/static/media/LogoZivotnaSredina.1cb5209502b71156c802.png",
     "static/media/roboto-all-500-normal.woff": "/borenka-ui-app/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "/borenka-ui-app/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
@@ -62,13 +62,13 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/borenka-ui-app/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/borenka-ui-app/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/borenka-ui-app/index.html",
-    "main.3202749c.css.map": "/borenka-ui-app/static/css/main.3202749c.css.map",
-    "main.36c388d0.js.map": "/borenka-ui-app/static/js/main.36c388d0.js.map",
+    "main.0751fdf6.css.map": "/borenka-ui-app/static/css/main.0751fdf6.css.map",
+    "main.1e1252e0.js.map": "/borenka-ui-app/static/js/main.1e1252e0.js.map",
     "630.0e886507.chunk.css.map": "/borenka-ui-app/static/css/630.0e886507.chunk.css.map",
-    "630.105c682d.chunk.js.map": "/borenka-ui-app/static/js/630.105c682d.chunk.js.map"
+    "630.05a02494.chunk.js.map": "/borenka-ui-app/static/js/630.05a02494.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3202749c.css",
-    "static/js/main.36c388d0.js"
+    "static/css/main.0751fdf6.css",
+    "static/js/main.1e1252e0.js"
   ]
 }
