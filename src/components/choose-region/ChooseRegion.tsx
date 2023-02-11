@@ -7,7 +7,8 @@ import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import { MobileDrawer } from "../home/HomeMobileDrawerMenu";
 import { motion as m } from "framer-motion";
 import { ModalInstructions } from "./modal-instructions/ModalInstructions";
-// import backgroundTrees from "../../static/background-trees.jpg";
+import backgroundTrees from "../../static/background-trees.jpg";
+import { WrongRegionModal } from "./wrong-region-modal/WrongRegionModal";
 
 const ChooseRegion = ({ trees }: any) => {
   const [currentHoveredRegion, setCurrentHoveredRegion] = useState<string>(
@@ -16,7 +17,7 @@ const ChooseRegion = ({ trees }: any) => {
   const navigate = useNavigate();
 
   const myStyle = {
-    backgroundImage: `url(${trees})`,
+    backgroundImage: `url(${backgroundTrees})`,
   };
   return (
     <m.div
@@ -27,6 +28,7 @@ const ChooseRegion = ({ trees }: any) => {
       style={myStyle}
     >
       <ModalInstructions />
+      <WrongRegionModal />
       <div className={classes["container__header"]}>
         <img src={Logo} alt="logo" onClick={() => navigate("/home")} />
         <MobileDrawer />

@@ -1,14 +1,24 @@
 import { useNavigate } from "react-router-dom";
 import classes from "./map.module.scss";
+import { useContext } from "react";
+import { ContextApi } from "../../../context-api/upload-context";
 
 const Map = ({ setCurrentHoveredRegion }: any) => {
   const navigate = useNavigate();
+  const { setIsWrongModalOpen }: any = useContext(ContextApi);
 
   return (
     <div className={classes["map__container"]}>
-      <svg onMouseOut={() => setCurrentHoveredRegion("Избери регион и посади виртуелно дрво")} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1134.299 867.05">
+      <svg
+        onMouseOut={() =>
+          setCurrentHoveredRegion("Избери регион и посади виртуелно дрво")
+        }
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1134.299 867.05"
+      >
         <g
-        onMouseOver={() => setCurrentHoveredRegion("Пелагониски регион") }
+          onMouseOver={() => setCurrentHoveredRegion("Пелагониски регион")}
+          onClick={() => setIsWrongModalOpen(true)}
           id="pelagoniski-region"
           data-name="pelagoniski-region"
         >
@@ -613,7 +623,8 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
           </g>
         </g>
         <g
-        onMouseOver={() => setCurrentHoveredRegion("Југозападен регион") }
+          onMouseOver={() => setCurrentHoveredRegion("Југозападен регион")}
+          onClick={() => setIsWrongModalOpen(true)}
           id="jugozapaden-region"
           data-name="jugozapaden-region"
         >
@@ -1050,8 +1061,8 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
           </g>
         </g>
         <g
-         
-          onMouseOver = {() => setCurrentHoveredRegion("Полошки регион")}
+          onMouseOver={() => setCurrentHoveredRegion("Полошки регион")}
+          onClick={() => setIsWrongModalOpen(true)}
           id="poloski-region"
           data-name="poloski-region"
         >
@@ -1355,8 +1366,8 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
           </g>
         </g>
         <g
-        
-          onMouseOver={() => setCurrentHoveredRegion("Скопски регион") }
+          onMouseOver={() => setCurrentHoveredRegion("Скопски регион")}
+          onClick={() => setIsWrongModalOpen(true)}
           id="skopski-region"
           data-name="skopski-region"
         >
@@ -1585,7 +1596,7 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
         </g>
         <g
           onClick={() => navigate("/map/severoistocen-region")}
-          onMouseOver={() => setCurrentHoveredRegion("Североисточен регион") }
+          onMouseOver={() => setCurrentHoveredRegion("Североисточен регион")}
           id="severoistocen-region"
           data-name="severoistocen-region"
         >
@@ -2054,7 +2065,7 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
         </g>
         <g
           onClick={() => navigate("/map/vardarski-region")}
-          onMouseOver={() => setCurrentHoveredRegion("Вардарски регион") }
+          onMouseOver={() => setCurrentHoveredRegion("Вардарски регион")}
           id="vardarski-region"
           data-name="vardarski-region"
         >
@@ -2643,7 +2654,7 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
         </g>
         <g
           onClick={() => navigate("/map/istocen-region")}
-          onMouseOver={() => setCurrentHoveredRegion("Источен регион") }
+          onMouseOver={() => setCurrentHoveredRegion("Источен регион")}
           id="istocen-region"
           data-name="istocen-region"
         >
@@ -3568,7 +3579,7 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
         </g>
         <g
           onClick={() => navigate("/map/jugoistocen-region")}
-          onMouseOver={() => setCurrentHoveredRegion("Југоисточен регион") }
+          onMouseOver={() => setCurrentHoveredRegion("Југоисточен регион")}
           id="jugoistocen-region"
           data-name="jugoistocen-region"
         >

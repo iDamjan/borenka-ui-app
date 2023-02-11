@@ -23,8 +23,6 @@ function App() {
   );
   const Region = lazy(() => import("./components/region/Region"));
 
-  const backgroundTrees = () => import("./static/background-trees.jpg");
-
   useEffect(() => {
     if (localStorage.getItem("firstFlowAnimation")) {
       setFirstFlowAni(false);
@@ -49,10 +47,7 @@ function App() {
                 <Route path="*" element={<Navigate to="/home" />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route
-                  path="/map"
-                  element={<ChooseRegion trees={backgroundTrees} />}
-                />
+                <Route path="/map" element={<ChooseRegion />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/organizations" element={<Organizations />} />
                 <Route path="/map/:regionId" element={<Region />} />

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import classes from "./modal-instructions.module.scss";
@@ -21,8 +21,17 @@ const style = {
 
 export const ModalInstructions = () => {
   const handleClose = () => setIsModalOpen(false);
-
   const [isModalOpen, setIsModalOpen] = useState(true);
+
+  useEffect(() => {
+    if (localStorage.getItem("firstFlowAnimation")) {
+      setIsModalOpen(false);
+    } else {
+      setIsModalOpen(true);
+      localStorage.setItem("firstFlowAnimation", "false");
+    }
+  }, []);
+
   return (
     <div className={classes.container}>
       <Modal

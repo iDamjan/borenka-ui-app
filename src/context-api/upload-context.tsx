@@ -3,8 +3,7 @@ export const ContextApi = createContext({});
 
 export const ContextProvider = ({ children }: any) => {
   const [openModalMobile, setOpenModalMobile] = useState(false);
-
-
+  const [isWrongModalOpen, setIsWrongModalOpen] = useState(false);
 
   const [popupMessage, setPopupMessage] = useState<any>({
     isVisible: false,
@@ -19,6 +18,8 @@ export const ContextProvider = ({ children }: any) => {
         setPopupMessage,
         openModalMobile,
         setOpenModalMobile,
+        isWrongModalOpen,
+        setIsWrongModalOpen,
       }}
     >
       {children}
