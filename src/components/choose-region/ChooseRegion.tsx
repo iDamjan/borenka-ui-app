@@ -7,16 +7,16 @@ import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import { MobileDrawer } from "../home/HomeMobileDrawerMenu";
 import { motion as m } from "framer-motion";
 import { ModalInstructions } from "./modal-instructions/ModalInstructions";
-import backgroundTrees from "../../static/background-trees.jpg";
+// import backgroundTrees from "../../static/background-trees.jpg";
 
-const ChooseRegion = () => {
+const ChooseRegion = ({ trees }: any) => {
   const [currentHoveredRegion, setCurrentHoveredRegion] = useState<string>(
     "Избери регион и посади виртуелно дрво"
   );
   const navigate = useNavigate();
 
   const myStyle = {
-    backgroundImage: `url(${backgroundTrees})`,
+    backgroundImage: `url(${trees})`,
   };
   return (
     <m.div
