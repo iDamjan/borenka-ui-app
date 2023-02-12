@@ -12,7 +12,7 @@ const style = {
   maxWidth: "600px",
   backgroundColor: "white",
   border: "none",
-  padding: "50px",
+  padding: "30px",
   borderRadius: "10px",
   fontFamily: "Pangolin",
   color: "var(--secondary)",
