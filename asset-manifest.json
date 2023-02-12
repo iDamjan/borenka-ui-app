@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/borenka-ui-app/static/css/main.d5a9a9d6.css",
-    "main.js": "/borenka-ui-app/static/js/main.2f357430.js",
+    "main.js": "/borenka-ui-app/static/js/main.859a5bf4.js",
     "static/css/638.54b8c70f.chunk.css": "/borenka-ui-app/static/css/638.54b8c70f.chunk.css",
     "static/js/638.64783134.chunk.js": "/borenka-ui-app/static/js/638.64783134.chunk.js",
     "static/css/285.b069034a.chunk.css": "/borenka-ui-app/static/css/285.b069034a.chunk.css",
@@ -59,7 +59,7 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/borenka-ui-app/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/borenka-ui-app/index.html",
     "main.d5a9a9d6.css.map": "/borenka-ui-app/static/css/main.d5a9a9d6.css.map",
-    "main.2f357430.js.map": "/borenka-ui-app/static/js/main.2f357430.js.map",
+    "main.859a5bf4.js.map": "/borenka-ui-app/static/js/main.859a5bf4.js.map",
     "638.54b8c70f.chunk.css.map": "/borenka-ui-app/static/css/638.54b8c70f.chunk.css.map",
     "638.64783134.chunk.js.map": "/borenka-ui-app/static/js/638.64783134.chunk.js.map",
     "285.b069034a.chunk.css.map": "/borenka-ui-app/static/css/285.b069034a.chunk.css.map",
@@ -75,6 +75,6 @@
   },
   "entrypoints": [
     "static/css/main.d5a9a9d6.css",
-    "static/js/main.2f357430.js"
+    "static/js/main.859a5bf4.js"
   ]
 }
