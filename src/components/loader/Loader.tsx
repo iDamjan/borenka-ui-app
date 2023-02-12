@@ -4,7 +4,7 @@ import classes from "./loader.module.scss";
 const Loader = () => {
   return (
     <div className={classes.loader}>
-      <CircularProgress />
+      <CircularProgress sx={{ color: "#F9A01B" }} />
     </div>
   );
 };
