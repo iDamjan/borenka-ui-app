@@ -20,7 +20,7 @@ const style = {
 
 export const ModalInstructions = () => {
   const handleClose = () => setIsModalOpen(false);
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     if (localStorage.getItem("modalInstruction")) {
@@ -29,7 +29,7 @@ export const ModalInstructions = () => {
       setIsModalOpen(true);
       setTimeout(() => {
         localStorage.setItem("modalInstruction", "false");
-      }, 100);
+      }, 10);
     }
   }, []);
 
