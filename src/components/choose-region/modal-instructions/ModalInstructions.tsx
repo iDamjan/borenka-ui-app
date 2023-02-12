@@ -36,6 +36,7 @@ export const ModalInstructions = () => {
   return (
     <div>
       <Modal
+        onClick={() => setIsModalOpen(false)}
         open={isModalOpen}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"

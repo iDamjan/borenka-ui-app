@@ -25,6 +25,7 @@ export const WrongRegionModal = () => {
   return (
     <div>
       <Modal
+        onClick={() => setIsWrongModalOpen(false)}
         open={isWrongModalOpen}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
