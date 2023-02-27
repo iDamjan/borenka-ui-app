@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "./static/css/main.72e734ad.css",
-    "main.js": "./static/js/main.135b333b.js",
+    "main.js": "./static/js/main.155e4ede.js",
     "static/css/638.54b8c70f.chunk.css": "./static/css/638.54b8c70f.chunk.css",
     "static/js/638.8159f547.chunk.js": "./static/js/638.8159f547.chunk.js",
     "static/css/285.148a1a55.chunk.css": "./static/css/285.148a1a55.chunk.css",
     "static/js/285.54f5e229.chunk.js": "./static/js/285.54f5e229.chunk.js",
-    "static/js/383.55e740d8.chunk.js": "./static/js/383.55e740d8.chunk.js",
+    "static/js/383.f684439a.chunk.js": "./static/js/383.f684439a.chunk.js",
     "static/css/794.b98df682.chunk.css": "./static/css/794.b98df682.chunk.css",
     "static/js/794.89770163.chunk.js": "./static/js/794.89770163.chunk.js",
     "static/css/796.7c7312ff.chunk.css": "./static/css/796.7c7312ff.chunk.css",
@@ -59,12 +59,12 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "./static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "./index.html",
     "main.72e734ad.css.map": "./static/css/main.72e734ad.css.map",
-    "main.135b333b.js.map": "./static/js/main.135b333b.js.map",
+    "main.155e4ede.js.map": "./static/js/main.155e4ede.js.map",
     "638.54b8c70f.chunk.css.map": "./static/css/638.54b8c70f.chunk.css.map",
     "638.8159f547.chunk.js.map": "./static/js/638.8159f547.chunk.js.map",
     "285.148a1a55.chunk.css.map": "./static/css/285.148a1a55.chunk.css.map",
     "285.54f5e229.chunk.js.map": "./static/js/285.54f5e229.chunk.js.map",
-    "383.55e740d8.chunk.js.map": "./static/js/383.55e740d8.chunk.js.map",
+    "383.f684439a.chunk.js.map": "./static/js/383.f684439a.chunk.js.map",
     "794.b98df682.chunk.css.map": "./static/css/794.b98df682.chunk.css.map",
     "794.89770163.chunk.js.map": "./static/js/794.89770163.chunk.js.map",
     "796.7c7312ff.chunk.css.map": "./static/css/796.7c7312ff.chunk.css.map",
@@ -75,6 +75,6 @@
   },
   "entrypoints": [
     "static/css/main.72e734ad.css",
-    "static/js/main.135b333b.js"
+    "static/js/main.155e4ede.js"
   ]
 }
