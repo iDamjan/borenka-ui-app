@@ -41,7 +41,7 @@ const Home = () => {
         <a href="https://www.instagram.com/scoutsmacedonia/?hl=en">
           <InstagramIcon />
         </a>
-        <a href="https://www.instagram.com/scoutsmacedonia/?hl=en">
+        <a href="https://www.facebook.com/borenkamk">
           <FacebookIcon />
         </a>
       </div>

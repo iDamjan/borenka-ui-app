@@ -132,7 +132,7 @@ const Organizations = () => {
         </div>
         <h2>
           За сите информации обратете ни се на :{" "}
-          <a href="mailto:info@borenka.mk">info@borenka.com</a>
+          <a href="mailto:sim@scout.org.mk">sim@scout.org.mk</a>
         </h2>
       </section>
     </m.div>
