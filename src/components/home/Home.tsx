@@ -8,6 +8,8 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { motion as m } from "framer-motion";
 
+// TODO: ADD FAVICON TO BE WITH URL SO IT CAN BE VISIBLE ON GOOGLE SEARCH
+
 const pages = [
   { label: "Дома", path: "/home" },
   { label: "За нас", path: "/about" },
