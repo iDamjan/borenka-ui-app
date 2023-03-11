@@ -8,6 +8,7 @@ import LogoZivotnaSredina from "../../static/LogoZivotnaSredina.png";
 import LogoZemjodelstvo from "../../static/LogoZemjodelstvo.png";
 import LogoUSA from "../../static/LogoUSA.png";
 import { motion as m } from "framer-motion";
+import LogoTelekom from "../../static/LogoTelekom.svg";
 
 const Organizations = () => {
   const navigate = useNavigate();
@@ -118,7 +119,14 @@ const Organizations = () => {
           <h1>Покровители</h1>
           <img src={LogoZivotnaSredina} alt="logo-zivotna-sredina" />
           <img src={LogoZemjodelstvo} alt="logo-zemjodelstvo" />
+          <br/>
+        <img
+          src={LogoTelekom}
+          alt="telekom-logo"
+          className={classes.telekomLogo}
+        />
         </m.div>
+
       </section>
       <section className={classes["section-five"]}>
         <div className={classes.usaSupport}>
