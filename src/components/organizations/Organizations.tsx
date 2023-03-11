@@ -94,18 +94,7 @@ const Organizations = () => {
           </m.p>
         </div>
       </section>
-      <section className={classes["section-tree"]}>
-        <m.div
-          initial={{ opacity: 0, x: -200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2 }}
-          className={classes.details}
-        >
-          <h1>ПОКРОВИТЕЛИ</h1>
-          <h2>Министерство за земјоделство, шумарство и водостопанство</h2>
-          <h2>Министерство за животна средина и просторно планирање</h2>
-        </m.div>
-      </section>
+
       <section className={classes["section-four"]}>
         <m.div
           initial={{ opacity: 0, x: -200 }}
@@ -119,14 +108,13 @@ const Organizations = () => {
           <h1>Покровители</h1>
           <img src={LogoZivotnaSredina} alt="logo-zivotna-sredina" />
           <img src={LogoZemjodelstvo} alt="logo-zemjodelstvo" />
-          <br/>
-        <img
-          src={LogoTelekom}
-          alt="telekom-logo"
-          className={classes.telekomLogo}
-        />
+          <br />
+          <img
+            src={LogoTelekom}
+            alt="telekom-logo"
+            className={classes.telekomLogo}
+          />
         </m.div>
-
       </section>
       <section className={classes["section-five"]}>
         <div className={classes.usaSupport}>
