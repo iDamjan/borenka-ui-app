@@ -13,34 +13,44 @@
     }
   }
 }
-@media (max-width: 100em){
-  .map__container{
-    svg{
+
+.pelagoniski{
+  position: relative;
+}
+
+.znakHr {
+  position: absolute;
+  z-index: 2;
+  max-width: 80px;
+  right: 650px;
+}
+
+@media (max-width: 100em) {
+  .map__container {
+    svg {
       max-width: 700px;
     }
   }
 }
-@media (max-width: 95em){
-  .map__container{
-    svg{
+@media (max-width: 95em) {
+  .map__container {
+    svg {
       max-width: 650px;
     }
   }
 }
 
-
-
-@media (max-width: 90em){
-  .map__container{
-    svg{
+@media (max-width: 90em) {
+  .map__container {
+    svg {
       max-width: 600px;
     }
   }
 }
 
-@media (max-width: 80em){
-  .map__container{
-    svg{
+@media (max-width: 80em) {
+  .map__container {
+    svg {
       max-width: 500px;
     }
   }

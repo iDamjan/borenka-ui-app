@@ -2,6 +2,10 @@ import { useNavigate } from "react-router-dom";
 import classes from "./map.module.scss";
 import { useContext } from "react";
 import { ContextApi } from "../../../context-api/upload-context";
+import ZnakHr from "../../../static/znak-hr.svg";
+import ZnakTmobile from "../../../static/znak-tmobile.svg";
+import ZnakIzvidniciHr from "../../../static/znak-izvidnici-hr.svg";
+import ZnakMakedonija from "../../../static/znak-makedonija.svg";
 
 const Map = ({ setCurrentHoveredRegion }: any) => {
   const navigate = useNavigate();
@@ -21,6 +25,7 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
           onClick={() => setIsWrongModalOpen(true)}
           id="pelagoniski-region"
           data-name="pelagoniski-region"
+          className={classes.pelagoniski}
         >
           <g>
             <polygon
@@ -2061,6 +2066,13 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
                 />
               </g>
             </g>
+            <image
+              href={ZnakMakedonija}
+              width="100"
+              height="100"
+              x="600"
+              y="80"
+            />
           </g>
         </g>
         <g
@@ -2090,6 +2102,7 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
                 fill="#192924"
               />
             </g>
+
             <g>
               <polygon
                 points="679.858 544.555 681.561 552.813 660.808 550.861 662.994 542.969 660.901 542.771 663.957 531.748 662.682 531.628 665.138 522.767 665.135 522.767 664.181 522.677 664.7 520.803 666.52 514.24 664.886 514.087 665.621 511.436 668.19 502.161 668.193 502.158 669.846 496.194 672.853 485.348 674.784 494.713 675.75 499.403 677.603 508.395 677.606 508.398 677.606 508.401 679.051 515.418 677.657 515.286 677.654 515.286 678.086 517.379 678.089 517.385 679.474 524.114 678.847 524.054 680.757 533.328 679.282 533.19 679.279 533.19 681.657 544.723 679.861 544.555 679.858 544.555"
@@ -2651,6 +2664,7 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
               />
             </g>
           </g>
+          <image href={ZnakHr} width="100" height="100" x="500" y="350" />
         </g>
         <g
           onClick={() => navigate("/map/istocen-region")}
@@ -3575,6 +3589,13 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
                 fill="#192924"
               />
             </g>
+            <image
+              href={ZnakTmobile}
+              width="100"
+              height="100"
+              x="800"
+              y="225"
+            />
           </g>
         </g>
         <g
@@ -4128,6 +4149,13 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
                 fill="#192924"
               />
             </g>
+            <image
+              href={ZnakIzvidniciHr}
+              width="100"
+              height="100"
+              x="850"
+              y="450"
+            />
           </g>
         </g>
       </svg>
