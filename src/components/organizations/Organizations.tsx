@@ -9,6 +9,8 @@ import LogoZemjodelstvo from "../../static/LogoZemjodelstvo.png";
 import LogoUSA from "../../static/LogoUSA.png";
 import { motion as m } from "framer-motion";
 import LogoTelekom from "../../static/LogoTelekom.svg";
+import LogoHrIzvidnici from "../../static/LogoHrIzvidnici.png";
+import LogoHr from "../../static/LogoHr.png";
 
 const Organizations = () => {
   const navigate = useNavigate();
@@ -109,27 +111,19 @@ const Organizations = () => {
           <img src={LogoZivotnaSredina} alt="logo-zivotna-sredina" />
           <img src={LogoZemjodelstvo} alt="logo-zemjodelstvo" />
           <br />
-          <img
-            src={LogoTelekom}
-            alt="telekom-logo"
-            className={classes.telekomLogo}
-          />
-        </m.div>
-      </section>
-      <section className={classes["section-five"]}>
-        <div className={classes.usaSupport}>
-          <h1>Oвој проект е поддржан од Амбасада на САД</h1>
+          <h1>Главни поБОРници</h1>
+          <img src={LogoTelekom} alt="telekom-logo" />
           <img src={LogoUSA} alt="LogoUSA" />
-          <h2>
-            Мислењата, откритијата и заклучоците или препораките изнесени овде
-            се на имплементаторите/ авторите, и не ги одразуваат оние на Владата
-            на САД.
-          </h2>
-        </div>
-        <h2>
-          За сите информации обратете ни се на :{" "}
-          <a href="mailto:sim@scout.org.mk">sim@scout.org.mk</a>
-        </h2>
+          <br />
+          <div className={classes.hr}>
+            <img
+              src={LogoHrIzvidnici}
+              alt="LogoHrIzvidnici"
+              className={classes.hrIzvidnici}
+            />
+            <img src={LogoHr} alt="LogoHr" />
+          </div>
+        </m.div>
       </section>
     </m.div>
   );
