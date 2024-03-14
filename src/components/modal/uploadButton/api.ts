@@ -1,5 +1,5 @@
 export const uploadToDrive = async (formData: FormData): Promise<boolean> => {
-  const response = await fetch("https://borenka.site/upload-drive", {
+  const response = await fetch("https://borenka.vip/upload-drive", {
     method: "POST",
     body: formData,
   });
