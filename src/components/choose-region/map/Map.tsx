@@ -6,6 +6,9 @@ import ZnakHr from "../../../static/znak-hr.svg";
 import ZnakTmobile from "../../../static/znak-tmobile.svg";
 import ZnakIzvidniciHr from "../../../static/znak-izvidnici-hr.svg";
 import ZnakMakedonija from "../../../static/znak-makedonija.svg";
+import ZnakKomercijalna from "../../../static/znak-komercijalna.svg";
+import ZnakDiageo from "../../../static/znak-diageo-01.svg";
+import ZnakLadna from "../../../static/znak-ladna-01.svg";
 
 const Map = ({ setCurrentHoveredRegion }: any) => {
   const navigate = useNavigate();
@@ -2074,6 +2077,13 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
               x="600"
               y="80"
             />
+            <image
+              href={ZnakKomercijalna}
+              width="100"
+              height="100"
+              x="800"
+              y="30"
+            />
           </g>
         </g>
         <g
@@ -3597,6 +3607,7 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
               x="780"
               y="210"
             />
+            <image href={ZnakLadna} width="100" height="100" x="950" y="190" />
           </g>
         </g>
         <g
@@ -4157,6 +4168,7 @@ const Map = ({ setCurrentHoveredRegion }: any) => {
               x="900"
               y="450"
             />
+            <image href={ZnakDiageo} width="100" height="100" x="700" y="450" />
           </g>
         </g>
       </svg>

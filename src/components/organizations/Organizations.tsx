@@ -11,6 +11,8 @@ import { motion as m } from "framer-motion";
 import LogoTelekom from "../../static/LogoTelekom.svg";
 import LogoHrIzvidnici from "../../static/LogoHrIzvidnici.png";
 import LogoHr from "../../static/LogoHr.png";
+import diageoLogo from "../../static/diageoLogo.png";
+import ladnaLogo from "../../static/ladnaLogo.png";
 
 const Organizations = () => {
   const navigate = useNavigate();
@@ -123,6 +125,8 @@ const Organizations = () => {
             />
             <img src={LogoHr} alt="LogoHr" />
           </div>
+          <img src={ladnaLogo} alt="ladnaLogo" />
+          <img src={diageoLogo} alt="diageoLogo" />
         </m.div>
       </section>
     </m.div>
