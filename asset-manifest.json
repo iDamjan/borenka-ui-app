@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "./static/css/main.4dcba738.css",
-    "main.js": "./static/js/main.5508f4d2.js",
-    "static/css/402.ba4a270d.chunk.css": "./static/css/402.ba4a270d.chunk.css",
-    "static/js/402.917b2ab9.chunk.js": "./static/js/402.917b2ab9.chunk.js",
+    "main.js": "./static/js/main.d764bc11.js",
+    "static/css/970.b09561fa.chunk.css": "./static/css/970.b09561fa.chunk.css",
+    "static/js/970.147ee06b.chunk.js": "./static/js/970.147ee06b.chunk.js",
     "static/css/285.8e07297b.chunk.css": "./static/css/285.8e07297b.chunk.css",
     "static/js/285.042af906.chunk.js": "./static/js/285.042af906.chunk.js",
     "static/js/383.921a881e.chunk.js": "./static/js/383.921a881e.chunk.js",
-    "static/css/971.fe3ee3da.chunk.css": "./static/css/971.fe3ee3da.chunk.css",
-    "static/js/971.554a48a5.chunk.js": "./static/js/971.554a48a5.chunk.js",
+    "static/css/604.7d180ad7.chunk.css": "./static/css/604.7d180ad7.chunk.css",
+    "static/js/604.91b30f23.chunk.js": "./static/js/604.91b30f23.chunk.js",
     "static/css/796.6544e033.chunk.css": "./static/css/796.6544e033.chunk.css",
     "static/js/796.683d94db.chunk.js": "./static/js/796.683d94db.chunk.js",
     "static/js/990.7b043500.chunk.js": "./static/js/990.7b043500.chunk.js",
@@ -32,6 +32,9 @@
     "static/media/severoistocen-region.svg": "./static/media/severoistocen-region.be0608a36350148f1aac8942ed89c684.svg",
     "static/media/znak-tmobile.svg": "./static/media/znak-tmobile.3e83d5ba4912077cf8e0b6a27af9707e.svg",
     "static/media/poloski-region.svg": "./static/media/poloski-region.12ff4e89d7cee2297c56ca5f1b4f51b7.svg",
+    "static/media/znak-ladna-01.svg": "./static/media/znak-ladna-01.22377a9f1ef795c76d5175137de833c1.svg",
+    "static/media/znak-diageo-01.svg": "./static/media/znak-diageo-01.8bf9302a0673030bed5ff7fb84141be9.svg",
+    "static/media/znak-komercijalna.svg": "./static/media/znak-komercijalna.e850844349da1c2ed303275748da0474.svg",
     "static/media/skopski-region.svg": "./static/media/skopski-region.dddbbe1c819fe26b7823116474d19549.svg",
     "static/media/roboto-latin-500-normal.woff2": "./static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "./static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
@@ -64,14 +67,14 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "./static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "static/media/LogoTelekom.svg": "./static/media/LogoTelekom.6de81e5421840f783b907a2d5eed7ea6.svg",
     "main.4dcba738.css.map": "./static/css/main.4dcba738.css.map",
-    "main.5508f4d2.js.map": "./static/js/main.5508f4d2.js.map",
-    "402.ba4a270d.chunk.css.map": "./static/css/402.ba4a270d.chunk.css.map",
-    "402.917b2ab9.chunk.js.map": "./static/js/402.917b2ab9.chunk.js.map",
+    "main.d764bc11.js.map": "./static/js/main.d764bc11.js.map",
+    "970.b09561fa.chunk.css.map": "./static/css/970.b09561fa.chunk.css.map",
+    "970.147ee06b.chunk.js.map": "./static/js/970.147ee06b.chunk.js.map",
     "285.8e07297b.chunk.css.map": "./static/css/285.8e07297b.chunk.css.map",
     "285.042af906.chunk.js.map": "./static/js/285.042af906.chunk.js.map",
     "383.921a881e.chunk.js.map": "./static/js/383.921a881e.chunk.js.map",
-    "971.fe3ee3da.chunk.css.map": "./static/css/971.fe3ee3da.chunk.css.map",
-    "971.554a48a5.chunk.js.map": "./static/js/971.554a48a5.chunk.js.map",
+    "604.7d180ad7.chunk.css.map": "./static/css/604.7d180ad7.chunk.css.map",
+    "604.91b30f23.chunk.js.map": "./static/js/604.91b30f23.chunk.js.map",
     "796.6544e033.chunk.css.map": "./static/css/796.6544e033.chunk.css.map",
     "796.683d94db.chunk.js.map": "./static/js/796.683d94db.chunk.js.map",
     "990.7b043500.chunk.js.map": "./static/js/990.7b043500.chunk.js.map",
@@ -80,6 +83,6 @@
   },
   "entrypoints": [
     "static/css/main.4dcba738.css",
-    "static/js/main.5508f4d2.js"
+    "static/js/main.d764bc11.js"
   ]
 }
