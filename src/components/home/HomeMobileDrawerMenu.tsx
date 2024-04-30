@@ -10,8 +10,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import ParkIcon from "@mui/icons-material/Park";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import HomeIcon from "@mui/icons-material/Home";
-import GroupWorkIcon from '@mui/icons-material/GroupWork';
-import PhoneIcon from '@mui/icons-material/Phone';
+import GroupWorkIcon from "@mui/icons-material/GroupWork";
+import PhoneIcon from "@mui/icons-material/Phone";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 

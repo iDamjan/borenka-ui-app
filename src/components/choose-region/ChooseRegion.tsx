@@ -5,10 +5,10 @@ import classes from "./choose-region.module.scss";
 import { useNavigate } from "react-router-dom";
 import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import { MobileDrawer } from "../home/HomeMobileDrawerMenu";
-import { motion as m } from "framer-motion";
 import { ModalInstructions } from "./modal-instructions/ModalInstructions";
-import backgroundTrees from "../../static/background-trees.jpg";
 import { WrongRegionModal } from "./wrong-region-modal/WrongRegionModal";
+import { Canvas } from "@react-three/fiber";
+import { Sky } from "@react-three/drei";
 
 const ChooseRegion = () => {
   const [currentHoveredRegion, setCurrentHoveredRegion] = useState<string>(
@@ -16,17 +16,18 @@ const ChooseRegion = () => {
   );
   const navigate = useNavigate();
 
-  const myStyle = {
-    backgroundImage: `url(${backgroundTrees})`,
-  };
   return (
-    <m.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.4 }}
-      className={classes.container}
-      style={myStyle}
-    >
+    <div className={classes.container}>
+      <div className={classes.canvas}>
+        <Canvas>
+          <Sky
+            distance={450000}
+            sunPosition={[0, 3, 0]}
+            inclination={0}
+            azimuth={0.25}
+          />
+        </Canvas>
+      </div>
       <ModalInstructions />
       <WrongRegionModal />
       <div className={classes["container__header"]}>
@@ -44,7 +45,7 @@ const ChooseRegion = () => {
       <h1 className={classes.mobileHeading}>
         Избери регион и посади виртуелно дрво
       </h1>
-    </m.div>
+    </div>
   );
 };
 
